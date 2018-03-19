@@ -1,0 +1,60 @@
+@import('vender.styl')
+main
+	nav 
+		font-size 0
+		margin 20px 0 30px
+		a 
+			display inline-block
+			font-size 16px 
+			height 50px 
+			line-height 50px 
+			width 25%
+			background-color rgba(0,0,0,.5)
+			text-align center
+			&.active 
+				box-shadow 0 0 5px 2px rgba(0,0,0,.5)
+				background-image url('../../images/plate-back.png')
+				background-repeat repeat
+	ul 
+		li
+			width 280px 
+			height 360px 
+			margin 0 26px 20px 0
+			position relative
+			overflow hidden
+			text-align center
+			font-size 16px
+			float left
+			&:hover 
+				.common_ovh
+					opacity 0
+				.info
+					transform translateY(0)	
+			&:nth-child(4n)
+				margin-right 0
+			img 
+				height 100%
+				position absolute
+				left 50%
+				transform translate(-50%)
+			.common_ovh
+				position absolute
+				bottom 0px
+				width 100%
+				color #fff 
+				line-height 40px
+				background linear-gradient(to top, rgba(0,0,0,.9), rgba(0,0,0,0))
+			.info
+				position absolute
+				bottom 0px
+				height 120px 
+				background linear-gradient(to top, rgba(0,0,0,.9), rgba(0,0,0,0))
+				width 100%
+				overflow hidden
+				transition all .2s
+				transform translateY(75px)
+				p 
+					margin-top 62px
+
+					
+					

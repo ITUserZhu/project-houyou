@@ -1,0 +1,88 @@
+@import('vender.styl')
+main
+	nav 
+		font-size 0
+		margin 20px 0 30px
+		a 
+			display inline-block
+			font-size 16px 
+			height 50px 
+			line-height 50px 
+			width 25%
+			background-color rgba(0,0,0,.5)
+			text-align center
+			&.active 
+				box-shadow 0 0 5px 2px rgba(0,0,0,.5)
+				background-image url('../../images/plate-back.png')
+				background-repeat repeat
+	ul 
+		li 
+			float left
+			width 450px 
+			height 260px 
+			position relative
+			margin-right 170px 
+			margin-bottom 40px 
+			background-color rgba(0,0,0,.3)
+			padding 20px 
+			padding-right 125px
+			box-sizing border-box
+			border-left 4px solid transparent
+			&:hover 
+				background-color rgba(0,0,0,.5)
+				border-color #FA1C31
+			&:nth-child(2n)
+				margin-right 0
+			p 
+				&.title 
+					font-size 20px 
+					height 3.2em 
+					overflow hidden
+					font-weight bold
+				&.desc 
+					height 7.4em 
+					overflow hidden
+					margin-top 20px 
+			.more
+				position absolute
+				width 140px 
+				height 40px 
+				line-height 40px 
+				left 20px 
+				bottom -10px 
+				box-shadow 1px 4px 10px 0 rgba(0,0,0,.4)
+				text-align center
+				background-color #252525
+				em 
+					display inline-block
+					width 100px 
+				i 
+					display inline-block
+					width 40px
+					font-style normal
+					background-color #333
+					box-shadow 0px 0px 10px 0 rgba(0,0,0,.4)
+			.img 
+				position absolute
+				width 170px 
+				height 170px 
+				top 50%
+				margin-top -85px 
+				right -85px
+				.back
+					width 100%
+					height 100%
+					background-size 95%
+					filter blur(10px)
+					background-repeat no-repeat
+					background-position center
+					opacity .9
+				img 
+					position absolute
+					top 50%
+					left 50%
+					width 100px
+					height 100px 
+					margin -50px 0 0 -50px
+					z-index 1
+					

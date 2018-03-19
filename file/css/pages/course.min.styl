@@ -1,0 +1,144 @@
+@import('vender.styl')
+main 
+	nav 
+		font-size 0
+		margin 20px 0
+		display table
+		width 100%
+		a 
+			display table-cell
+			font-size 16px 
+			height 50px 
+			line-height 50px 
+			width 20%
+			background-color rgba(0,0,0,.5)
+			text-align center
+			&.active 
+				box-shadow 0 0 5px 2px rgba(0,0,0,.6)
+				background-image url('../../images/plate-back.png')
+				background-repeat repeat
+	article
+		width 820px
+		ul 
+			li 
+				border-bottom 1px solid #999
+				width 100%
+				padding-bottom 12px
+				margin-top 10px
+				&:hover 
+					.con 
+						background-color rgba(0,0,0,.5)
+				.img 
+					height 150px 
+					float left							
+					overflow hidden
+					max-width 200px
+					img
+						height 100%
+						margin-left 50%
+						transform translateX(-50%)
+				.con 
+					overflow hidden
+					height 150px 
+					padding-left 15px
+					position relative
+					.title 
+						font-size 16px 
+						height 3.2em 
+						overflow hidden
+						margin-right 45px
+						margin-top 6px
+					.desc
+						margin-top 12px 
+						height 3.2em 
+						overflow hidden
+						margin-right 4px
+					span.fr 
+						font-size 12px
+						margin-top 10px
+						margin-right 10px
+	aside 
+		width 350px
+		h3
+			height 40px 
+			line-height 40px 
+			text-align center
+			background-image url('../../images/plate-back.png')
+			background-repeat repeat
+			margin-bottom 10px
+		.hot-article
+			margin-bottom 20px
+			ul 
+				li 
+					width 100% 
+					height 34px
+					line-height 34px 
+					padding-left 14px 
+					box-sizing border-box
+					margin-right 20px 
+					position relative
+					.show-article 
+						display none
+						.img 
+							float left
+							margin-right 10px 
+							width 100px 
+							height 74px
+							overflow hidden
+						p 
+							overflow hidden
+							height 6em 
+							font-size 12px 
+							line-height 1.5em
+					&:before 
+						content ""
+						position absolute
+						width 7px 
+						height 7px
+						background-color #999 
+						border-radius 50%
+						margin-top -3px
+						left -4px
+						top 50%
+					&.active 
+						height auto
+						.common_ovh
+							color #fff
+						&:before 
+							display none
+						.show-article 
+							display block 
+		.hot-soft 
+			ul 
+				padding 0 5px
+				li 
+					float left
+					width 100px
+					height 115px 
+					margin-right 20px 
+					margin-bottom 10px 
+					// background-color rgba(0,0,0,.4)
+					text-align center
+					padding-top 10px 
+					img 
+						width 60px 
+						height 60px
+					&:nth-child(3n)
+						margin-right 0
+					p 
+						height 3.2em 
+						overflow hidden
+						margin 8px 5px
+						font-size 12px
+					&:hover 
+						// background-color rgba(0,0,0,.6)
+						p
+							color #FA1C31
+			a.more 
+				display block
+				height 40px 
+				line-height 40px 
+				text-align center
+				background-color rgba(0,0,0,.5)
+				color #FF5146
+		

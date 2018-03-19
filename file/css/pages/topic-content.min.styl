@@ -1,0 +1,107 @@
+@import('vender.styl')
+.topic-banner
+	height 250px 
+	.con 
+		width 600px
+		margin-right 120px 
+		h1
+			font-size 26px 
+			width 100% 
+		p
+			font-size 15px 
+			height 6.2em
+			overflow hidden
+			margin-top 30px 
+			margin-bottom 25px
+		span 
+			color #FA1C31
+			font-size 12px 
+	.thumb
+		overflow hidden		
+		ul 
+			font-size 0
+			width 400px 
+			height 160px 
+			margin-top 32px
+			li 
+				width 80px 
+				height 80px 
+				display inline-block
+				&:nth-child(2)
+					background-color rgba(255, 255, 255, 0.15)
+				&:nth-child(4)
+					background-color rgba(121, 121, 121, 0.4)
+				&:nth-child(5)
+					background-color rgba(148, 148, 148, 0.1)
+				&:nth-child(6)
+					background-color rgba(255, 255, 255, 0.1)
+				&:nth-child(8)
+					background-color rgba(148, 148, 148, 0.2)
+				&:nth-child(9)
+					background-color rgba(250, 28, 49, 0.5)
+				img 
+					width 100%
+					height 100%
+					opacity .5
+.line
+	width 1200px 
+	height 30px 
+	background-image url('../../images/line-bg.png')
+	background-repeat no-repeat
+.items 
+	li 
+		width 380px 
+		height 220px 
+		background-color rgba(51, 51, 51, 0.5)
+		float left	
+		margin-right 30px 
+		margin-top 70px
+		position relative
+		padding 50px 20px 0 
+		box-sizing border-box
+		text-align center
+		&:hover 
+			.img 
+				transform translateY(-10px)
+			.down
+				background-color #050505
+		&:nth-child(3n)
+			margin-right 0
+		.img 
+			position absolute
+			width 80px 
+			height 80px 
+			overflow hidden
+			top -40px
+			left 50%
+			margin-left -40px 
+			transform translateY(0)
+			transition all .2s
+			img 
+				width 100%
+				height 100%
+		.title 
+			font-size 18px 
+			height 3.2em 
+			overflow hidden
+		.version 
+			font-size 16px 
+			margin 10px 
+		.info 
+			font-size 12px 
+			text-align left
+			.sys 
+				display inline-block
+				width 68%
+		.down 
+			position absolute 
+			width 100%
+			height 40px 
+			line-height 40px 
+			bottom 0
+			left 0 
+			background-color #151515
+						
+
+	
+

@@ -1,0 +1,618 @@
+@import('vender.styl')
+.user-head
+	height 200px 
+	background-image url('../../images/per-index-bg.png')
+	background-repeat no-repeat
+	padding 20px 55px 
+	box-sizing border-box
+	.fl 
+		width 200px 
+	.cen 
+		width 100%
+		.user-wra
+			margin 0 200px 0 200px 
+			text-align center
+			.heading-img
+				width 100px 
+				height 100px 
+				overflow hidden
+				border-radius 50%
+				margin 0 auto
+				img 
+					width 100%
+					height 100%
+			.nickname
+				margin-top 12px
+				font-size 18px
+	.left
+		margin-left -100%
+		padding-top 22px
+		p 
+			line-height 32px 
+			i 
+				font-size 20px
+				vertical-align text-bottom
+				margin-right 5px
+	.right 
+		margin-left -200px
+		.vip-type,.point-left
+			display inline-block
+			width 95px
+			height 90px 
+			text-align center
+			padding-top 10px
+			vertical-align middle
+			position relative
+			a 
+				display inline-block
+				width 60px 
+				height 30px 
+				line-height 30px 
+				color #fff 
+				text-align center
+				border-radius 5px 
+				background-color #222
+				position absolute
+				bottom 10px 
+				left 50%
+				margin-left -30px
+		.point-left
+			border-left 1px solid #fff
+			p 
+				font-size 16px
+				font-weight bold
+				margin-top -5px
+		.sign
+			width 60px 
+			height 30px 
+			line-height 30px 
+			color #fff 
+			text-align center
+			border-radius 5px 
+			background-color #333
+			margin 10px auto 0
+.menu
+	font-size 0
+	padding 5px 
+	background-color rgba(0,0,0,.3)
+	box-shadow inset 0 0 3px 1px hsla(0,0%,70%,.4)
+	margin -25px auto 0
+	width 828px
+	border-radius 5px 
+	a 
+		display inline-block
+		font-size 14px 
+		width 100px 
+		height 39px 
+		line-height 40px 
+		text-align center
+		color #fff 
+		margin-left 4px 
+		background-color #333
+		border-top 1px solid #5C5C5C
+		&:first-child 
+			margin-left 0
+		&.active 
+			background linear-gradient(to top, #FA1C31, #FF3346)
+			border-radius 3px
+.menu-item
+	margin-top 24px
+	min-height 350px
+	position relative
+	&>li 
+		display none
+		width 1160px
+		margin 0 auto
+		&.active 
+			display block
+		.item-type
+			border-bottom 1px solid #999
+			font-size 0
+			span 
+				font-size 14px
+				display inline-block
+				border 1px solid transparent
+				margin 0 -1px -1px 0
+				width 98px 
+				height 38px 
+				line-height 38px 
+				text-align center
+				cursor pointer
+				&.active 
+					border-color #999
+		input[type=text],select, input[type=url]
+			height 40px 
+			font-size 16px 
+			text-indent 10px 
+			background-color #666
+			outline none
+			border none
+			color #aaa
+		input[type=text],input[type=url]
+			width 770px
+		:-moz-placeholder
+			color #aaa
+		::-moz-placeholder
+			color #aaa 
+		:-ms-input-placeholder
+			color #aaa 
+		::-webkit-input-placeholder
+			color #aaa 
+		.item-con
+			.item 
+				display none 
+				&.active 
+					display block
+		// 个人信息
+		&.per-info
+			.item
+				width 830px 
+				height 385px 
+				margin 66px auto 0 
+				fieldset
+					margin-bottom 20px
+					&.sex,&.tel 
+						display inline-block
+					&.sex
+						select
+							width 180px
+					&.tel 
+						margin-left 120px
+						input 
+							width 300px 
+						span 
+							color #FA1C31
+							text-decoration underline
+							margin-left 20px
+							cursor pointer
+					.city-select
+						display inline-block
+						select 
+							width 380px
+							margin-right 10px
+			.save-btn
+				display block
+				width 140px
+				height 40px
+				border-radius 5px 
+				background-color #FA1C31
+				text-align center
+				line-height 40px 
+				margin 35px auto 0
+				outline none
+				border none 
+				color #fff
+				cursor pointer
+				&.grey 
+					background-color #999
+					cursor default
+		// 收藏,下载
+		&.collection,&.donload-his,&.history
+			.item-con
+				.item 
+					&.soft,&.plugin
+						li 
+							width 210px 
+							height 274px 
+							float left
+							margin 22px 27px 0 0
+							position relative
+							padding 25px 
+							box-sizing border-box
+							background-color rgba(0,0,0,.4)
+							text-align center
+							transform translateY(0)
+							transition all .2s
+							&:nth-child(5n)
+								margin-right 0
+							&:hover 
+								transform translateY(-5px)
+								span.del-col
+									display block
+								p.down
+									background-color #FA1C31
+							span 
+								position absolute
+								top 0px
+								&.del-col
+									top 8px
+									right 10px
+									width 16px
+									height 16px 
+									cursor pointer
+									text-align center
+									line-height 16px 
+									border-radius 50%
+									background-color #ddd 
+									color #6b6b6b
+									font-size 12px
+									display none
+								&.time
+									left 0
+									width 80px 
+									height 20px 
+									text-align center
+									background-color rgba(131,131,131,.2)
+									font-size 12px
+							.img 
+								width 95px 
+								height 95px 
+								overflow hidden
+								margin 0 auto
+								img 
+									height 100%
+									width 100%
+							p 
+								&.title 
+									height 4.8em 
+									overflow hidden
+									margin-top 20px
+								&.version 
+									font-size 12px
+								&.down 
+									position absolute
+									bottom 0px
+									left 0px
+									height 30px 
+									line-height 30px 
+									background-color #111
+									width 100%	
+					&.pic
+						margin-top 20px
+						li 
+							float left
+							margin 3px 
+							overflow hidden
+							position relative
+							&:hover 
+								.mask 
+									transform translateY(0)
+							img 
+								width 100%
+								height 100%
+							.mask 
+								position absolute
+								width 100%
+								height 100%
+								left 0px
+								top 0px
+								background linear-gradient(to top, rgba(0,0,0,.8), rgba(0,0,0,0))
+								padding 80px 0 0
+								box-sizing border-box
+								text-align center
+								transform translateY(100%)
+								transition all .4s
+								span 
+									position absolute
+									right 10px
+									top 10px
+									width 60px 
+									height 30px 
+									line-height 30px
+									background-color rgba(0,0,0,.3)
+									border-radius 5px 
+									text-align center
+								p 
+									position absolute
+									width 100%
+									left 0px
+									bottom 0px
+									line-height 30px 
+									text-align left
+									text-indent 10px
+
+							
+		
+			
+		// 充值记录,消费记录
+		&.recharge,&.consume
+			fieldset
+				margin 20px 0
+				select 
+					width 120px
+					margin-right 35px
+				input 
+					width 300px
+				button 
+					display inline-block
+					width 140px
+					vertical-align top
+					height 40px
+					background-color #FA1C31
+					margin-left 20px
+					text-align center
+					line-height 40px 
+					outline none
+					border none 
+					color #fff
+					&.grey 
+						background-color #999
+					i 
+						font-size 18px
+						vertical-align text-bottom
+						margin-right 5px
+			table 
+				width 100%
+				tr 
+					td,th
+						text-align center
+						word-break break-all
+						padding 10px 0 10px 20px
+					th 
+						width 200px
+					&:nth-child(2n)
+						background-color rgba(0,0,0,.3)
+				thead 
+					tr 
+						height 40px
+						background-color #111
+		// 优惠券
+		&.coupon
+			ul 
+				width 1100px 
+				margin 20px auto
+			li 
+				width 340px 
+				height 100px 
+				float left
+				margin 0 40px 30px 0
+				position relative
+				background-color #C4A46F
+				overflow hidden
+				&:after,&:before 
+					content ""
+					position absolute
+					left -10px
+					width 20px 
+					height 20px 
+					background-color #232323
+					border-radius 50%
+					top -10px
+				&:after
+					top auto 
+					bottom -10px
+				&:nth-child(3n)
+					margin-right 0
+				&.active 
+					.num
+						.sign.unuse
+							display block
+					background-color #B0B0B0
+				.fl 
+					width 240px 
+					height 100px 
+					padding 10px 17px 
+					box-sizing border-box
+					position relative
+					&:after,&:before 
+						content ""
+						position absolute
+						right -12px
+						width 20px 
+						height 20px 
+						background-color #232323
+						border-radius 50%
+						top -10px
+						z-index 2
+					&:after
+						top auto 
+						bottom -10px
+					.con 
+						width 100%
+						height 100%
+						border 1px solid #A58963
+						padding 15px 30px 
+						box-sizing border-box
+						text-align center
+						p 
+							font-size 17px 
+							&.time 
+								font-size 12px 
+								margin-top 8px 
+				.num
+					overflow hidden
+					position relative
+					width 96px 
+					height 100%
+					border-left 4px dotted #222 
+					margin-left -4px
+					text-align center
+					line-height 100px 
+					font-size 18px
+					overflow hidden
+					em 
+						font-size 26px
+					.sign
+						position absolute
+						font-size 14px 
+						line-height 1.6
+						right -32px
+						top 9px
+						transform rotate(45deg)
+						width 100px 
+						height 20px 
+						line-height 20px 
+						font-size 12px
+						display none
+						&.use 
+							background-color #DB484E
+							display block
+						&.unuse 
+							background-color #4E4E4E
+		// 消息中心
+		&.message
+			.item-con
+				padding-top 20px
+			table 
+				width 100%
+				tr 
+					td,th
+						word-break break-all
+						padding 10px 0 10px 20px
+					th 
+						width 200px
+					&:nth-child(2n)
+						background-color rgba(0,0,0,.3)
+				thead 
+					tr 
+						height 40px
+						background-color #111
+			.msg-in
+				table
+					tr 
+						td 
+							i 
+								display inline-block
+								width 8px 
+								height 8px 
+								border-radius 50%
+								background-color #999
+								margin 0 15px 0 0
+						td:nth-child(2n)
+							text-align right
+							padding-right 15px
+			.report-list
+				text-align center
+			.report
+				fieldset
+					margin-bottom 20px
+					.type 
+						margin-right 20px
+					label 
+						position relative 
+						margin-right 25px
+						&.active 
+							i:after 
+								display block
+						i 
+							position absolute
+							width 14px
+							height 14px 
+							background-color #131313
+							border-radius 50%
+							left -1px
+							top 1px
+							&:after
+								content "" 
+								position absolute
+								width 6px 
+								height 6px 
+								left 4px 
+								top 4px 
+								background-color #FA1C31
+								border-radius 50%
+								display none
+						input
+							margin-right 8px
+							outline none
+					&.quest-cont
+						margin-bottom 0
+						.type 
+							float left
+							margin-right 24px
+						div 
+							overflow hidden
+							textarea
+								width 100%
+								resize none
+								background-color #666
+								border none
+								outline none
+								padding 10px
+								height 200px 
+								color #aaa
+								font-size 16px
+				input[type='submit']
+					display block
+					width 140px
+					height 40px
+					border-radius 5px 
+					background-color #FA1C31
+					text-align center
+					line-height 40px 
+					margin-top 5px
+					outline none
+					border none 
+					color #fff
+					float right
+				.alert-text
+					margin-left 90px
+					margin-top 6px 
+					color #fa1c31
+					display none
+.renew-wra{position:fixed;width:100%;left:0;top:0;height:100%;background-color:rgba(0,0,0,.5);z-index:9999;display:none}.renew-wra .renew-close{position:absolute;right:15px;width:20px;height:20px;line-height:20px;text-align:center;top:10px;font-size:24px;color:#999;cursor:pointer;font-weight:700}.renew-wra .cont{position:absolute;top:0;bottom:0;left:0;right:0;margin:auto;width:800px;height:610px;box-shadow:0 0 15px 0 rgba(0,0,0,.5);border-radius:10px;background-image:url('../../images/body-back.png');padding:20px;box-sizing:border-box;font-size:16px}.renew-wra .cont .renew-top{line-height:40px}.renew-wra .cont .renew-con .renew-type span,.renew-wra .cont .renew-top span{display:inline-block;line-height:46px;box-sizing:border-box;text-align:center}.renew-wra .cont .renew-top span{font-size:18px;width:100%;border:1px solid #FB6D5F}.renew-wra .cont .renew-top i{font-size:28px;font-style:normal;color:#FB6D5F}.renew-wra .cont .coupon-title,.renew-wra .cont .renew-con .type-title{margin:15px 0}.renew-wra .cont .renew-con .renew-type{border-left:1px solid #999;border-right:1px solid #999;border-radius:5px 5px 0 0;overflow:hidden}.renew-wra .cont .renew-con .renew-type span{font-size:18px;width:50%;border-top:1px solid #999;border-bottom:1px solid #999;cursor:pointer}.renew-wra .cont .renew-con .renew-type span.active{background:#333;color:#fff;border-color:#333}.renew-wra .cont .renew-con .pay-scan{height:auto;line-height:275px;display:none;border:1px solid #999;border-top:none;border-radius:0 0 5px 5px;overflow:hidden}.renew-wra .cont .renew-con .pay-scan.active{display:block}.renew-wra .cont .renew-con .pay-scan .ewm{width:120px;height:120px;display:inline-block;margin:0 40px 0 110px;vertical-align:middle;position:relative}.renew-wra .cont .renew-con .pay-scan .ewm img{position:absolute;top:0;left:0;width:100%;height:100%}.renew-wra .cont .renew-con .pay-scan .pay-num{margin-right:68px;display:inline-block;font-size:16px}.renew-wra .cont .renew-con .pay-scan .pay-num .num{font-size:32px;color:#FB6D5F}.renew-wra .cont .renew-con .pay-scan .intro-img{display:inline-block;width:140px;height:164px;vertical-align:middle}.renew-wra .cont .renew-con .pay-scan .intro-img img{width:100%;height:100%}				
+.coupon-wra{height:38px;border:1px solid #999;border-radius:5px;line-height:38px;font-size:16px;padding:0 15px 0 35px;box-sizing:border-box;position:relative;cursor:pointer}.coupon-wra i,.coupon-wra i:before{border-radius:50%;position:absolute}.coupon-wra.active{border-color:#FE6600}.coupon-wra i{left:10px;top:10px;width:17px;height:17px;background-color:#ccc}.coupon-wra i:before{content:'';width:7px;height:7px;left:5px;top:5px;background-color:transparent}.coupon-wra.active i{background-color:#FE6600}.coupon-wra.active i:before{background-color:#fff}.coupon-wra .discounts{width:330px;max-height:161px;overflow:auto;padding:10px;position:absolute;top:40px;right:0;box-shadow:0 5px 15px 0 rgba(0,0,0,.15);z-index:2;background-color:#1b1b1b;display:none}.coupon-wra .discounts.active{display:block}.coupon-wra .discounts li .discount-num{display:inline-block;border-right:1px dashed #999;position:relative;width:70px;font-size:26px;text-align:center;line-height:45px;height:100%;float:left}.coupon-wra .discounts li{height:45px;border:1px solid #999;position:relative;margin-bottom:10px}.coupon-wra .discounts li .discount-num:after,.coupon-wra .discounts li .discount-num:before,.coupon-wra .discounts li:after,.coupon-wra .discounts li:before{content:"";position:absolute;width:10px;height:10px;border-radius:50%;background-color:#1b1b1b}.coupon-wra .discounts li:before{left:-6px;top:-6px;border-right:1px solid #999;transform:rotate(45deg)}.coupon-wra .discounts li:after{left:-6px;bottom:-6px;border-top:1px solid #999;transform:rotate(45deg)}.coupon-wra .discounts li .discount-num:before{top:-6px;right:-6px;border-left:1px solid #999;border-bottom:1px solid #999;transform:rotate(-45deg)}.coupon-wra .discounts li .discount-num:after{bottom:-6px;right:-6px;border-right:1px solid #999;border-top:1px solid #999;transform:rotate(-45deg)}.coupon-wra .discounts li .coupon-info{overflow:hidden;color:#999;font-size:12px;line-height:1.5;padding:5px 0 0 24px}.coupon-wra .discounts li .coupon-info span{position:absolute;right:10px;top:7px;width:58px;height:28px;border:1px solid #FE812D;color:#FE812D;text-align:center;line-height:28px;font-size:16px}.pay-scan .ali-logo-r{height:50px;line-height:50px;border-radius:5px;background-color:#fff;margin:65px auto 0;width:90%;border:1px solid #FE6601}.renew-con .pay-scan .ali-logo-r img{vertical-align:middle;margin:0 25px}.renew-con .pay-scan .ali-logo-r .intro{color:#999}.renew-con .pay-scan .ali-logo-r .pay-num{float:right;font-size:16px;margin-right:20px}.renew-con .pay-scan .ali-logo-r .pay-num em{color:#FE6608}.renew-con .pay-scan form{line-height:1.5em}.renew-con .pay-scan .btn-ali{width:148px;height:38px;line-height:38px;color:#fff;letter-spacing:2px;font-size:16px;background-color:#fe6600;box-shadow:0 2px 0 0 #cc2a1e;position:relative;text-align:center;cursor:pointer;display:block;margin:40px auto;border-radius:5px;outline:0;border:none}
+
+.tel-athu
+	width 440px 
+	height 340px 
+	position fixed 
+	left 0
+	top 0
+	bottom 0
+	right 0
+	margin auto 
+	background-image:url('../../images/body-back.png')
+	padding 40px 30px
+	border-radius 5px 
+	box-sizing border-box
+	box-shadow 0 0 10px 0 rgba(0,0,0,.5);
+	display none
+	input[type=text]
+		height 40px 
+		font-size 16px 
+		text-indent 10px 
+		background-color #666
+		outline none
+		border none
+		color #aaa
+	:-moz-placeholder
+		color #aaa
+	::-moz-placeholder
+		color #aaa 
+	:-ms-input-placeholder
+		color #aaa 
+	::-webkit-input-placeholder
+		color #aaa 
+.tel-athu .toggle_view{display:none}.tel-athu .toggle_view.active{display:block}.tel-athu fieldset{margin-bottom:15px}.tel-athu fieldset.new-tel .tel-ipt,.tel-athu fieldset:first-child .tel-ipt{width:310px}.tel-athu fieldset:nth-child(2) img{width:100px;height:38px;border:1px solid #eee;vertical-align:top;margin-left:17px;cursor:pointer}.tel-athu fieldset:nth-child(3) label{letter-spacing:4px}.tel-athu fieldset.new-tel label{letter-spacing:0}.tel-athu fieldset .get-code{font-size:12px;width:98px;display:inline-block;height:38px;margin-left:17px;background-color:#F9FFFA;color:#fa1c31;border:1px solid #fa1c31;vertical-align:top;text-align:center;line-height:40px;border-radius:5px;cursor:pointer}.tel-athu fieldset .get-code.forbid{color:#999;border-color:#999;cursor:default}.tel-athu fieldset:nth-child(3){margin-bottom:30px}.tel-athu .submit_tel{display:block;margin:0 auto;background-color:#fa1c31;width:150px;height:40px;color:#fff;outline:0;border:none;border-radius:5px;margin-top:10px;cursor:pointer}.tel-athu .tel_tips,.tel-athu .tel_tips_past{text-align:center;margin-top:10px;color:#FF5A5A;font-size:12px;opacity:0}.tel-athu fieldset.change-code{position:relative}.tel-athu .change-tips{color:#999;margin:10px 0}.tel-athu .tel_tips_past.gactive{opacity:1;color:green}.tel-athu .tel_tips_past.ractive{opacity:1;color:#FF5A5A}.tel-athu .tel_tips.active{opacity:1}.tel-athu .get-code-tip{font-size:12px;color:#999;position:absolute;right:0;top:44px}
+
+.tel-athu .close-tel {
+	position: absolute;
+    font-size: 30px;
+    padding: 5px;
+    text-align: center;
+    top: -15px;
+    right: -15px;
+    cursor: pointer;
+    color: #aaa;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+.tel-athu fieldset:first-child .per-tel {
+	width 296px; 
+}
+.tel-athu .per-tel-code {
+	width 179px;
+}
+.tel-athu fieldset.new-tel {
+	margin-bottom 5px
+}
+.tel-athu fieldset.new-tel .tel-ipt {
+	width 296px;
+}
+.tel-athu .new-tel {
+	margin-top 25px
+}
+.no-data-show {
+	display none 
+	text-align center
+	line-height 60px
+	position absolute
+	left 50%
+	margin-left -26px
+	top 100px
+}
+.no-data-show-tb {
+	text-align center
+	line-height 60px
+}

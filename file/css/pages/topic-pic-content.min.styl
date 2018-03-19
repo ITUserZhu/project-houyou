@@ -1,0 +1,111 @@
+@import('vender.styl')
+.banner
+	height 200px 
+	background-color #191919
+	margin-bottom 30px
+	.title
+		width 360px
+		position relative
+		padding 20px 0 0 30px 
+		box-sizing border-box
+		&:after 
+			content ""
+			position absolute
+			width 0
+			height 0
+			border-bottom 200px solid #191919
+			border-right 200px solid transparent
+			right -200px
+			top 0
+		span 
+			width 100px 
+			height 35px 
+			line-height 35px 
+			background-color #0C0C0C
+			text-align center
+			display block 
+			font-size 16px 
+		h1 
+			font-size 35px 
+			font-weight bold	
+			margin-bottom 20px
+			letter-spacing 10px
+		a 
+			border 1px solid #999
+			color #999
+			border-radius 5px 
+			text-align center
+			display block
+			height 34px 
+			line-height 34px 
+			width 120px
+	.desc
+		width 840px 
+		height 100%
+		background-repeat no-repeat
+		background-position center
+		background-size 100% auto
+		box-sizing border-box 
+		padding 50px 60px 0 275px 
+		text-shadow 1px 1px 3px #131111
+		span 
+			font-size 16px 
+		p 
+			margin-top 15px
+			height 4.8em 
+			overflow hidden
+.img-items
+	li 
+		float left		
+		width 280px 
+		height 420px 		
+		margin-right 26px 
+		margin-bottom 20px 
+		position relative
+		overflow hidden
+		&:hover 
+			p 
+				transform translateY(0)
+		&:nth-child(4n)
+			margin-right 0
+		img 
+			position absolute
+			height 100%
+			left 50%
+			transform translateX(-50%)
+		p 
+			height 50px 
+			line-height 50px 
+			position absolute
+			width 100%
+			left 0px
+			padding 0 10px
+			box-sizing border-box
+			transition all .2s
+		.info
+			top 0px
+			background linear-gradient(to bottom, rgba(0,0,0,.9), rgba(0,0,0,0))
+			transform translateY(-50px)
+			span 
+				display inline-block
+				width 50px 
+				height 20px 
+				text-align center
+				line-height 20px 
+				// background-color rgba(0,0,0,0.5)
+				margin-left 5px
+			i 
+				font-size 20px
+				display inline-block
+				width 25px 
+				height 25px 
+				text-align center
+				line-height 25px 
+				cursor pointer
+				margin-top 10px
+		.title
+			bottom 0px
+			font-size 16px
+			background linear-gradient(to top, rgba(0,0,0,.9), rgba(0,0,0,0))
+			transform translateY(50px)
+

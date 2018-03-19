@@ -1,0 +1,207 @@
+@import('vender.styl')
+main 
+	nav 
+		font-size 0
+		display table 
+		width 100%
+		a 
+			display table-cell
+			height 50px 
+			line-height 50px
+			text-align center
+			font-size 16px 
+			background-color rgba(0,0,0,.4)
+			&:nth-child(2n)
+				background-color rgba(17, 17, 17, 0.5)
+			&:hover 
+				background-color rgba(0,0,0,0.6)
+			&.active
+				box-shadow 0 0 5px 2px rgba(0,0,0,.5)
+				background-image url('../../images/plate-back.png')
+				background-repeat repeat
+	.classify
+		font-size 0
+		margin 20px 0 10px
+		li 
+			font-size 14px 
+			display inline-block
+			width 100px 
+			height 40px 
+			line-height 40px 
+			box-sizing border-box
+			text-align center
+			border 1px solid #999
+			margin-right 22px 
+			margin-bottom 20px
+			border-radius 5px
+			&:hover,&.active
+				background-color #000
+				border-color #000
+				a 
+					color #fff
+			&:nth-child(10n)
+				margin-right 0
+			a 
+				display block
+				width 100%
+				height 100%
+				color #999
+section 
+	h3 
+		font-size 18px 
+		text-align center
+		position relative
+		font-weight normal
+		margin 30px 0
+		&:before,&:after 
+			content ""
+			position absolute
+			width 72px 
+			height 1px 
+			background-color #999 
+			top 50%
+			margin-top -0.5px 
+		&:before 
+			left 50%
+			margin-left -160px
+		&:after 
+			right 50%
+			margin-right -160px
+	a.more 
+		display block
+		width 100%
+		height 50px 
+		line-height 50px 
+		background-color rgba(0,0,0,.5)
+		color #FA1C31
+		font-size 12px 
+		text-align center
+		margin-top 20px
+	&.vector
+		ul
+			li 
+				width 290px 
+				height 290px
+				float left 
+				margin 0 13px 10px 0
+				position relative
+				&:hover 
+					.img 
+						transform scale(.95)
+				&:nth-child(4n)
+					margin-right 0
+				.img 
+					width 100%
+					height 100%
+					overflow hidden
+					transition all .2s
+				img 
+					height 100%
+					margin-left 50%
+					transform translateX(-50%)
+				p 
+					position absolute
+					bottom 0px
+					left 0px
+					height 40px
+					line-height 40px 
+					width 100%
+					box-sizing border-box
+					padding 0 15px
+					background-color rgba(0,0,0,.5)
+	&.photo
+		ul 
+			li 
+				float left
+				margin 5px 
+				overflow hidden
+				position relative
+				&:hover 
+					.mask 
+						transform translateY(0)
+				img 
+					height 100%
+					width 100%
+				.mask
+					position absolute
+					width 100%
+					height 100%
+					left 0px
+					top 0px
+					background linear-gradient(to top, rgba(0,0,0,.8), rgba(0,0,0,0))
+					padding 80px 0 0
+					box-sizing border-box
+					text-align center
+					transform translateY(100%)
+					transition all .4s
+					p 
+						margin-bottom 15px
+						max-height 3.2em 
+						overflow hidden
+					i 
+						display block
+						width 24px 
+						height 24px 
+						text-align center
+						line-height 24px 
+						font-size 22px
+						margin 0 auto
+						cursor pointe
+	&.png
+		ul 
+			li 
+				width 290px 
+				height 300px 
+				float left
+				margin 0 13px 30px 0 
+				padding 10px 20px 
+				box-sizing border-box
+				background-color #333333
+				transition all .4s
+				transform translateY(0)
+				&:hover 
+					transform translateY(-10px)
+					.img 
+						.add 
+							opacity 1
+							p 
+								margin-top 0
+				&:nth-child(4n)
+					margin-right 0
+				.img 
+					width 250px 
+					height 250px 
+					overflow hidden
+					background-image url('../../images/png-back.png')
+					background-repeat no-repeat
+					position relative
+					img 
+						max-height 85%
+						width auto
+						margin-left 50%
+						margin-top 50%
+						transform translate(-50%,-50%)
+					.add
+						position absolute	
+						width 100%
+						height 100%
+						overflow hidden
+						background-color rgba(0,0,0,.4)
+						padding 10px
+						box-sizing border-box
+						top 0px
+						left 0px
+						opacity 0
+						i.icon-heart 
+							font-size 26px 
+						p 
+							margin-top -40px
+							transition all .4s
+				p 
+					margin 5px 
+						
+							
+
+
+
+			

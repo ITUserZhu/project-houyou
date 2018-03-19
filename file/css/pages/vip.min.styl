@@ -1,0 +1,357 @@
+@import('vender.styl')
+.toggle-recharge
+	font-size 0
+	border-bottom 2px solid #111
+	a 
+		font-size 16px
+		display inline-block
+		width 200px
+		height 35px 
+		background-color rgba(0,0,0,.3)
+		line-height 35px
+		text-align center
+		border-radius 10px 10px 0 0
+		vertical-align bottom
+		&.active 
+			height 50px 
+			line-height 50px 
+			color #fff
+			background-color rgba(0,0,0,.5) 
+.toggle-wra
+	margin 30px 0
+	height 400px
+	width 100%
+	.toggle-item
+		width 100%
+		height 100%
+		position relative
+		display none
+		.arr 
+			position absolute
+			top 50% 
+			margin-top -25px 
+			width 50px 
+			height 50px 
+			cursor pointer
+			font-size 50px 
+			line-height 50px
+			color #999
+			img 
+				width 100%
+			&.left 
+				left 0px	
+				transform rotate(180deg)
+			&.right 
+				right 0px	
+		&.active 
+			display block
+		.details
+			margin 0 63px
+			height 100%
+			overflow hidden
+			.wraper
+				width 10000px 
+				&>li 
+					float left
+					width 350px 
+					height 400px 
+					background-color rgba(17, 17, 17, 0.6)
+					margin-right 12px 
+					padding 30px 
+					box-sizing border-box
+					position relative
+					cursor pointer
+					&:nth-child(3n)
+						margin-right 0
+					&.active 
+						.choose 
+							display block
+					.choose
+						position absolute
+						right 10px
+						top 0px
+						width 33px 
+						height 44px
+						background-color #FA1C31
+						display none
+						&:after 
+							content ""
+							position absolute
+							bottom 0
+							left 0
+							width 0
+							height 0
+							border none
+							border-bottom 13px solid #0F0F0F
+							border-left 16.5px solid transparent
+							border-right 16.5px solid transparent
+					p 
+						&.title
+							font-size 20px 
+						&.should-pay
+							color #999
+							font-size 18px
+							margin-top 20px
+							em 
+								font-size 26px
+								color #fff
+								font-weight bold
+								vertical-align top
+							i 
+								font-style normal
+								vertical-align bottom 
+								margin-left 5px
+								font-size 14px
+					ul 
+						margin 35px 0 0 20px
+						li 
+							font-size 12px 
+							color #999
+							line-height 26px 
+.coupon-box
+	.fl 
+		font-size 24px 
+		margin-right 20px
+	.coupon
+		width 1080px
+		height 40px 
+		line-height 40px 
+		background-color rgba(17, 17, 17, 0.6)
+		font-size 16px
+		position relative
+		cursor pointer
+		&.active 
+			i:after 
+				display block
+		i 
+			display inline-block
+			width 12px 
+			height 12px 
+			border-radius 50%
+			background-color rgba(0,0,0,.8)
+			position relative
+			margin-left 10px
+			margin-right 10px
+			&:after 
+				content ""
+				position absolute
+				width 6px
+				height 6px 
+				border-radius 50%
+				background-color #FA1C31
+				left 3px 
+				top 3px
+				display none
+		.fr 
+			padding-right 30px
+			position relative 
+			span 
+				position absolute
+				transform rotate(90deg)
+				background-color #111
+				right -8px
+				top 8px
+				width 40px
+				height 24px
+				line-height 24px
+				text-align center
+		ul 
+			width 330px 
+			height 161px
+			overflow auto 
+			padding 10px 
+			position absolute
+			top 40px 
+			right 0px
+			box-shadow 0 5px 15px 0 rgba(0,0,0,.15)
+			z-index 2 
+			background-color #1B1B1B
+			display none
+			li 
+				height 45px 
+				border 1px solid #ddd 
+				position relative 
+				margin-top 10px 
+				cursor pointer
+				&:first-child 
+					margin-top 0
+				&:before, &:after 
+					content ""
+					position absolute
+					width 10px 
+					height 10px 
+					border-radius 50%
+					background-color #1B1B1B
+				&:before 
+					left -6px 
+					top -6px 
+					border-right 1px solid #ddd
+					transform rotate(45deg)
+				&:after 
+					left -6px 
+					bottom -6px 
+					border-top 1px solid #ddd
+					transform rotate(45deg)
+				.discount-num 
+					display inline-block
+					border-right 1px dashed #ddd 
+					position relative 
+					width 70px 
+					font-size 26px 
+					text-align center
+					line-height 45px 
+					height 100%
+					float left
+					&:before, &:after 
+						content ""
+						position absolute
+						width 10px 
+						height 10px 
+						border-radius 50%
+						background-color #1B1B1B
+					&:before 
+						right -6px 
+						top -6px 
+						border-bottom 1px solid #ddd
+						border-right 1px solid #ddd
+						transform rotate(45deg)
+					&:after 
+						right -6px 
+						bottom -6px 
+						border-right 1px solid #ddd
+						border-top 1px solid #ddd
+						transform rotate(-45deg)
+				.coupon-info 
+					overflow hidden
+					color #999
+					font-size 12px 
+					line-height 1.5 
+					padding 5px 0 0 24px
+					span 
+						position absolute 
+						right 10px 
+						top 7px
+						width 58px 
+						height 28px 
+						color #FA1C31
+						text-align center
+						line-height 28px 
+						font-size 16px 
+.pay-type
+	margin-top 30px 
+	.fl 
+		font-size 24px 
+		margin-right 20px
+	.type 
+		overflow hidden
+		a 
+			display inline-block
+			width 220px 
+			height 40px 
+			line-height 40px 
+			text-align center
+			border 1px solid transparent 
+			border-radius 5px 
+			background-color #161616
+			margin-right 20px
+			&.active 
+				border-color #FA1C31
+			i 
+				margin-right 10px
+				font-size 20px
+				vertical-align text-bottom
+				&.icon-wechat 
+					color #00C700
+				&.icon-alipay
+					color #01A1EB	
+.pay-wra
+	width 600px 
+	margin 20px auto
+	height 250px
+	.pay-wra-type
+		display none
+		overflow hidden
+		&.active 
+			display block
+	.view-left 
+		display inline-block
+		vertical-align middle
+		.pay-code 
+			width 160px 
+			height 160px 
+			position relative 
+			margin 20px 0 0 25px 
+			padding 5px 
+			img 
+				width 100%
+				height 100%
+			.pay-code-bg 
+				position absolute
+				width 100%
+				height 100%
+				left 0px
+				top 0px
+				background-color rgba(0,0,0,.8)
+				text-align center
+				line-height 170px
+				font-size 16px
+		p 
+			text-align center
+			font-size 12px 
+			margin 10px 0 0 25px 
+	.view-right 
+		display inline-block
+		vertical-align middle
+		width 140px 
+		margin 0 20px 
+		span 
+			display block
+			em 
+				color #FA1C31
+				font-size 25px 
+	.wx-img
+		display inline-block
+		vertical-align middle
+		width 204px 
+	.ali-logo
+		height 50px 
+		line-height 50px 
+		border-radius 5px 
+		background-color rgba(0,0,0,.5)
+		margin 35px auto 0
+		width 90%
+		img 
+			vertical-align middle
+			margin 0 25px 
+		.intro 
+			color #999
+		.pay-num 
+			float right
+			font-size 16px 
+			margin-right 20px 
+			em 
+				color #FA1C31
+	.btn-ali
+		width 160px 
+		height 36px 
+		color #fff 
+		letter-spacing 2px 
+		font-size 16px 
+		background-color #fe6600
+		box-shadow 0 2px 0 0 #cc2a1e
+		cursor pointer
+		display block
+		margin 40px auto
+		outline none 
+		border none 
+		border-radius 5px
+		text-align center
+		line-height 36px
+			
+			
+
+
+		
+				
+				
+

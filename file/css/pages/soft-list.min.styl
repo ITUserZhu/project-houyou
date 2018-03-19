@@ -1,0 +1,123 @@
+@import('vender.styl')
+.top-nav
+	background-image url('../../images/plate-back.png')
+	background-repeat repeat
+	margin-bottom 30px
+	overflow hidden
+	padding-bottom 10px
+	nav 
+		font-size 0
+		margin 10px 20px 0
+		text-align center
+		a 
+			display inline-block
+			font-size 14px 
+			line-height 40px 
+			height 40px 
+			width 100px 
+			text-align center
+			margin 0 8px
+			color #999
+			overflow hidden
+			text-overflow ellipsis
+			white-space nowrap
+			border-radius 10px 10px 0 0
+			&.active 
+				color #fff
+				background-color rgba(0,0,0,.4)
+			&:nth-child(10n)
+				margin-right 0
+	.sec-nav
+		li 
+			display none
+			background-color rgba(0,0,0,.4)
+			margin 0 50px 
+			border-radius 10px
+			&.active 
+				display block
+			a 
+				line-height 45px 
+				margin 0 22px
+				color #999
+				display inline-block
+				&.active 
+					color #fff
+	h4 
+		border-bottom 1px solid #999
+		line-height 38px
+		margin 0 20px
+	ul.rec-soft 
+		margin-top 10px
+		li 
+			width 120px 
+			height 135px
+			float left
+			text-align center
+			padding-top 15px
+			&:hover 
+				background-color rgba(71,71,71,.3)
+			img 
+				width 100px 
+				height 100px 
+			p 
+				font-size 12px
+				overflow hidden	
+				white-space nowrap
+				text-overflow ellipsis
+				margin 5px 5px 0
+.list-wra
+	li
+		float left
+		width 590px
+		height 170px 
+		margin 20px 20px 0 0
+		padding 10px
+		overflow hidden
+		background-color rgba(0,0,0,.3)
+		box-sizing border-box
+		transform translateY(5px)
+		transition all .4s
+		&:hover 
+			transform translateY(0px)
+			background-color rgba(0,0,0,.5)
+		&:nth-child(2n)
+			margin-right 0
+		&:nth-child(-n+2)
+			margin-top 0
+		
+		.item 
+			height 120px 
+			.img 
+				width 120px
+				height 120px 
+				border-radius 10px
+				overflow hidden
+				float left
+				margin-right 10px
+				img 
+					width 100%
+					height 100%	
+			.content
+				overflow hidden
+				p
+					&.title 
+						font-size 16px
+						height 3.2em 
+						overflow hidden
+					&.version
+						margin 6px 0
+						font-size 12px
+					&.desc 
+						height 3.2em 
+						overflow hidden
+						font-size 11px
+		.info
+			font-size 12px
+			margin-top 13px
+			span 
+				display inline-block
+				width 20%							
+				margin-right 25px
+				overflow hidden
+				white-space nowrap
+				text-overflow ellipsis
