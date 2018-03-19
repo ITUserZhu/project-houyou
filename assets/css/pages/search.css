@@ -1,0 +1,363 @@
+html,body {
+  background: #fff;
+  height: auto;
+}
+.common_pagination {
+  position: static;
+  padding-top: 20px;
+  margin-top: 40px;
+  border-top: 1px solid #ddd;
+}
+.nav-top {
+  width: 100%;
+  height: 41px;
+  line-height: 41px;
+  background: #f4f4f4;
+  border-bottom: 1px solid #E2E2E2;
+  font-size: 14px;
+  padding-left: 10px;
+  box-sizing: border-box;
+
+}
+.nav-top .top-width {
+  display: inline-block;
+  width: 1200px;
+}
+.nav-top strong {
+  font-weight: normal;
+  color: #666;
+  float: left;
+}
+.nav-top i {
+  float: right;
+  display: inline;
+  margin-right: 7px;
+  color: #ccc;
+  font-style: normal;
+}
+.nav-top i a {
+  margin: 0 10px;
+}
+.header {
+  padding: 0 10px;
+  background: #fff;
+  border-bottom: 1px solid #e1e1e1;
+}
+.head-fix {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  box-shadow: 0 0 5px #888;
+}
+.header-warpper {
+  position: relative;
+  height: 114px;
+}
+.logo {
+  display: none;
+}
+.logo-img {
+  width: 180px;
+  padding: 30px 0 0;
+  float: left;
+  display: inline;
+  margin: 0 15px;
+  text-align: center;
+}
+.logo-img img {
+  width: 178px;
+  height: auto;
+}
+.search {
+  float: left;
+  width: 760px;
+  height: 80px;
+  padding: 20px 0 0 0;
+  position: relative;
+}
+.search .search-classify {
+  padding: 0 0 5px 2px;
+  position: absolute;
+  top: 70px;
+}
+.timeso .time .selected,.search .search-classify .selected {
+  color: #17882f;
+  cursor: default;
+  font-weight: bold;
+}
+.search .search-classify a {
+  color: #333;
+  padding: 0 12px;
+}
+.search .search-classify a:hover {
+  color: #17882f;
+}
+
+.search .search-ipt {
+  position: absolute;
+  top: 30px;
+}
+.search .auto-search {
+  display: none;
+  position: absolute;
+  top: 63px;
+  left: 0;
+  width: 633px;
+  border: 1px solid #ddd;
+  background: #fff;
+  cursor: default;
+  overflow: auto;
+  -webkit-box-shadow: 1px 4px 3px rgba(50, 50, 50, 0.64);
+  -moz-box-shadow: 1px 4px 3px rgba(50, 50, 50, 0.64);
+  box-shadow: 1px 4px 3px rgba(50, 50, 50, 0.64);
+}
+.search .search-box {
+  float: left;
+  display: inline;
+  font: 16px/22px arial;
+  width: 555px;
+  height: 22px;
+  border: 1px solid #b6b6b6;
+  border-right: none;
+  padding: 5px 70px 5px 8px;
+  outline-style: none;
+}
+.search .search-btn {
+  float: left;
+  width: 100px;
+  height: 34px;
+  line-height: 34px;
+  border: none;
+  cursor: pointer;
+  background: #17882f;
+  outline-style: none;
+  color: #fff;
+  border-bottom: 1px solid #17882f;
+}
+.timeso {
+  float: left;
+  width: 118px;
+  position: relative;
+  right: 0;
+  top: 37px;
+  z-index: 9;
+}
+.timeso:hover .time {
+  display: block;
+}
+.timeso:hover .arrow{
+  transform: rotate(45deg);
+}
+.timeso .time-all {
+  position: relative;
+  padding-right: 14px;
+  cursor: default;
+}
+.timeso .arrow {
+  border-right: 1px solid #333;
+  border-bottom: 1px solid #333;
+  width: 6px;
+  height: 6px;
+  display: inline-block;
+  margin-bottom: 2px;
+  transform: rotate(-45deg);
+  transition: transform .2s;
+}
+.timeso .time {
+  margin-left: 32px;
+  padding: 4px 10px;
+  position: absolute;
+  background: #fff;
+  display: none;
+  transition: all .5s;
+}
+.timeso .time a {
+  line-height: 30px;
+}
+.timeso .time a:hover {
+  color: #17882f;
+}
+footer.common_footer {
+  width: 100%;
+  background-size: 100%;
+  border-top: 1px solid #ddd;
+}
+.main-body {
+  padding: 20px 0;
+  width: auto;
+}
+main {
+  width: 635px;
+  padding: 0 0 0 135px;
+  float: left;
+  margin: auto;
+}
+main .recommend {
+  padding-left: 22px;
+  background: url('/assets/images/favicon.ico') 0 3px no-repeat;
+  background-size: 20px;
+  height: 3em;
+  overflow: hidden;
+  margin-bottom: 14px;
+}
+main .recommend:before {
+  content: "";
+  display: inline-block;
+
+}
+main .recommend a {
+  margin-left: 15px;
+  color: #00c;
+  text-decoration: underline;
+} 
+.info-warpper {
+  margin-bottom: 3px;
+}
+.info-warpper .item {
+  margin-bottom: 20px;
+  color: #333;
+  width: 630px;
+}
+.info-warpper .item .right.soft {
+  width: auto;
+}
+.info-warpper .item .right.soft .introduce {
+  height: auto;
+}
+.info-warpper .item .right.soft .for-more {
+  color: #00c;
+}
+.info-warpper .item .soft-title {
+  margin-bottom: 5px;
+}
+.info-warpper .item:hover .soft-title a {
+  color: #17882f;
+}
+.soft-title a{
+  font-size: 16px;
+  color: #333;
+  font-weight: normal;
+}
+.soft-title a img {
+  width: 22px;
+  height: 22px;
+  margin-right: 4px;
+  float: left
+}
+.info-warpper .item .soft-info {
+  font-size: 12px;
+  margin-bottom: 3px;
+  color: #999;
+}
+.info-warpper .item .introduce {
+  margin-bottom: 2px;
+  color: #666;
+  height: 4.5em;
+  overflow: hidden;
+}
+.info-warpper .img{
+  display: inline-block;
+  height: 84px;
+  float: left;
+  margin-right: 20px;
+}
+.info-warpper .right{
+  display: inline-block;
+  max-width: 460px;
+}
+.info-warpper .img img{
+  height: 100%;
+  max-width: 150px;
+}
+
+.info-warpper .item .for-more {
+  color: #00c;
+}
+.info-warpper .item .addr {
+  color: green;
+  margin-right: 10px;
+  font-size: 13px;
+}
+.info-warpper .item .update {
+  color: #999;
+}
+.pagination {
+  position: static;
+  margin-top: 40px;
+}
+aside {
+  width: 280px;
+  float: left;
+  display: inline;
+  border-left: 1px solid #e1e1e1;
+  padding-left: 20px;
+  margin-left: 125px;
+}
+aside .aside-item {
+  margin-bottom: 24px;
+  width: 280px;
+  background: #fff;
+}
+aside .recomend-title {
+  margin-bottom: 12px;
+}
+aside .recomend-title .title{
+  display: inline-block;
+  max-width: 70%;
+}
+aside .recomend-title .get-more {
+  float: right;
+  display: inline;
+  margin-right: 17px;
+  font-weight: normal;
+  color: #17882f;
+}
+aside .soft-item {
+  float: left;
+  width: 75px;
+  padding-bottom: 1px;
+  margin: 0 17px 8px 0;
+  text-align: center;
+  height: 98px;
+  overflow: hidden;
+}
+aside .soft-item img {
+  width: 75px;
+  height: 75px;
+}
+aside .soft-item .soft-name{
+  display: block;
+}
+aside .soft-article {
+  display: block;
+  width: 280px;
+  height: 32px;
+  line-height: 32px;
+  border-bottom: 1px solid #f3f3f3;
+  text-align: left;
+  overflow: hidden;
+}
+aside .soft-article .article-title a{
+  font-weight: normal;
+  color: #333;
+}
+aside .soft-article:hover .article-title a{
+  color: #17882f;
+}
+.info-warpper em{
+  color:#c00;
+}
+.special_title{
+  border: 1px solid #3fce00;
+  padding: 1px 5px;
+  font-size: 14px;
+  color: #009a31;
+  border-radius: 3px;
+  margin-left: 10px;
+}
+.common_pagination a {
+  margin-left: 8px;
+  background: #efefef;
+}
+

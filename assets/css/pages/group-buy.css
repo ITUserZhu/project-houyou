@@ -1,0 +1,589 @@
+body {
+	background-color: #EFF1F3;
+}
+.head img {
+	width: 100%;
+	height: auto;
+}
+.container {
+	width: 1200px;
+	margin: 0 auto;
+}
+.container h2 {
+	font-size: 34px;
+	text-align: center;
+	line-height: 2.6em;
+}
+.join-center {
+	height: 150px;
+	margin: 10px 0 50px;
+}
+.join-center .person-num,
+.join-center .join-entry {
+	border: 2px solid #666;
+	border-radius: 10px;
+	padding: 10px 12px;
+	box-sizing: border-box; 
+	display: inline-block;
+	height: 146px;
+	vertical-align: middle;
+}
+.join-center .person-num {
+	width: 316px;
+	margin-right: 20px;
+}
+.join-center .person-num .title {
+	font-size: 24px;
+	text-align: center;
+	margin-bottom: 5px;
+}
+.join-center .person-num .bar-wra {
+	width: 100%;
+	height: 18px;
+	border: 1px solid #FEB217;
+	position: relative;
+	margin: 8px 0;
+}	
+.join-center .person-num .per-bar {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	background: #FEB217;
+    background: -moz-linear-gradient(left, #FEB217 9%, #ff5200 100%);
+    background: -webkit-linear-gradient(left, #FEB217 9%,#ff5200 100%);
+    background: linear-gradient(to right, #FEB217 9%,#ff5200 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FEB217', endColorstr='#ff5200',GradientType=1 );
+}
+.join-center .join-entry {
+	width: 596px;
+	margin-right: 10px;
+	font-size: 18px;
+	position: relative;
+}
+.join-center .join-entry p em {
+	color: #000;
+	font-size: 22px;
+	margin-right: 5px;
+	font-weight: bold;
+}
+.join-center .join-entry .tips {
+	font-size: 14px;
+	margin-left: 15px;
+}
+.join-center .buy-num {
+	width: 276px;
+	height: 38px;
+	border: 1px solid #666;
+	margin-bottom: 10px;
+}
+.join-center .buy-num a {
+	display: inline-block;
+	height: 100%;
+	width: 58px;
+	text-align: center;
+	line-height: 39px;
+	vertical-align: middle;
+	font-size: 24px;
+}
+.join-center .buy-num a.reduce-btn {
+	border-right: 1px solid #666;
+}
+.join-center .buy-num a.add-btn {
+	border-left: 1px solid #666;
+}
+.join-center .buy-num .ipt-num {
+	outline: none;
+	border: none;
+	text-align: center;
+	color: #FEB217;
+	font-size: 18px;
+	width: 158px;
+	height: 100%;
+	vertical-align: middle;
+	-moz-appearance:textfield;
+	background-color: #EFF1F3;
+}
+.join-center .buy-num .ipt-num::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+}
+.join-center .other-num a {
+	display: inline-block;
+	border: 1px solid #666;
+	width: 58px;
+	height: 38px;
+	margin-right: 13px;
+	text-align: center;
+	line-height: 40px;
+}
+.join-center .join-now {
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	width: 200px;
+	height: 86px;
+	text-align: center;
+	line-height: 86px;
+	background-color: #FEB217;
+	color: #91500A;
+	font-size: 20px;
+	border-radius: 10px;
+}
+.coupon-give {
+	display: inline-block;
+	vertical-align: middle;
+}
+.coupon-give .coupon-item {
+	width: 250px;
+	height: 70px;
+	background-color: #EDA814;
+	border-radius: 10px;
+	overflow: hidden;
+	color: #fff;
+	cursor: pointer;
+}
+.coupon-give .coupon-item:nth-child(2) {
+	background-color: #D34702;
+	margin-top: 6px;
+}
+.coupon-give .coupon-item .fl {
+	width: 159px;
+	height: 100%;
+	border-right: 1px dashed #fff;
+	position: relative;
+	padding-left: 20px; 
+	font-size: 12px;
+}
+.coupon-give .coupon-item .price em {
+	font-size: 20px;
+}
+.coupon-give .coupon-item .fl span {
+	color: #691400;
+}
+.coupon-give .coupon-item .fl:before,
+.coupon-give .coupon-item .fl:after {
+	content: "";
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	right: -4px;
+	background-color: #EFF1F3;
+}
+.coupon-give .coupon-item .fl:before {
+	top: -4px;
+}
+.coupon-give .coupon-item .fl:after {
+	bottom: -4px;
+}
+.coupon-give .coupon-item .use {
+	display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+    display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+    display: inline-block;
+    width: 70px;
+    height: 100%;
+    padding: 15px;
+    padding-left: 17px;
+    padding-right: 10px;
+    line-height: 21px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    letter-spacing: 4px;
+    font-size: 16px;
+}
+.coupon-give .coupon-item a {
+	color: #fff;
+}
+.container .item-wra {
+	border: 2px solid #666;
+	position: relative;
+	padding: 40px 20px 25px;
+	box-sizing: border-box;
+	border-radius: 10px;
+}
+.container .item-wra .title {
+	position: absolute;
+	left: 50%;
+	top: -22px;
+	padding: 0 33px;
+	line-height: 44px;
+	height: 44px;
+	background-color: #363940;
+	border-radius: 22px;
+	text-align: center;
+	font-size: 18px;
+	transform: translateX(-50%);
+	color: #fff;
+	min-width: 140px;
+}
+.container .reward-list {
+	height: 200px;
+	margin-bottom: 50px;
+}
+.reward-list ul {
+	height: 140px;
+	overflow-y: auto;
+}
+.reward-list li {
+	float: left;
+    width: 254px;
+    height: 58px;
+    border: 1px solid #EF8D00;
+    margin-right: 10px;
+    margin-top: 10px;
+    position: relative;
+    line-height: 72px;
+    padding: 0 10px;
+    overflow: hidden;
+}
+.reward-list li:nth-child(4n) {
+	margin-right: 0;
+}
+.reward-list li:nth-child(-n + 4) {
+	margin-top: 0;
+}
+.reward-list li em {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 99px;
+	height: 18px;
+	text-align: center;
+	line-height: 18px;
+	background-color: #EF8D00;
+	color: #fff;
+}
+.reward-list li img {
+	border-radius: 50%;
+	margin-right: 5px;
+	vertical-align: middle;
+}
+.reward-list li .common_ovh {
+	display: inline-block;
+	max-width: 50%;
+	vertical-align: middle;
+}
+.history-list .fl {
+	width: 860px;
+	height: 400px;
+	font-size: 16px;
+	padding-top: 30px;
+	padding-bottom: 0;
+}
+.history-list .recode_list {
+	height: 360px;
+	overflow: hidden;
+}
+.history-list>.fr {
+	width: 320px;
+	height: 400px;
+}
+.history-list .fl li {
+	line-height: 58px;
+}
+.history-list .fl li img {
+	border-radius: 50%;
+	vertical-align: middle;	
+	margin-right: 8px;
+}
+.history-list .fl li .common_ovh {
+	display: inline-block;
+	max-width:200px;
+	vertical-align: middle;
+}
+.history-list .fl li .fr em {
+	margin-right: 40px;
+	display: inline-block;
+	width: 120px;
+}
+.history-list .fl li .fr {
+	text-align: right;
+}
+.history-list .fr ul {
+	height: 342px;
+	overflow-y: auto;
+}
+.history-list .fr li {
+	position: relative;
+	margin-top: 18px;
+}
+.history-list .fr li:first-child {
+	margin-top: 0;
+}
+.history-list .fr li p {
+	color: #999;
+}
+.history-list .fr li .is-get {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.rule {
+	margin-top: 30px;
+	padding-bottom: 40px;
+}
+.rule p {
+	font-size: 20px;
+	color: #DF2B2F;
+	margin-bottom: 10px;
+}
+.rule li {
+	line-height: 40px;
+	font-size: 16px;
+}
+.rule li em {
+	color: #DF2B2F;
+	font-size: 28px;
+	font-style: italic;
+	margin-right: 5px;
+}
+.recode {
+	line-height: 100px;
+	text-align: center;
+	color: #999;
+}
+.pay-wra {
+	position: fixed;
+	width: 600px;
+	height: 430px;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	border-radius: 10px;
+	padding: 42px;
+	box-sizing: border-box;
+	background-color: #fff;
+	display: none;
+}
+.pay-wra .close-pay {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	font-size: 26px;
+	color: #666;
+	text-align: center;
+	line-height: 30px;
+	right: 10px;
+	top: 5px;
+	cursor: pointer;
+}
+.pay-wra .tips {
+	height: 48px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	line-height: 50px;
+	padding: 0 10px 0 28px;
+	font-size: 16px;
+	position: relative;
+}
+.pay-wra .tips:before {
+	content: "";
+	position: absolute;
+	left: 10px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: #ddd;
+	top: 20px;
+}
+.pay-wra .tips span {
+	color: #999;
+	margin-left: 5px;
+	font-size: 14px;
+}
+.pay-wra .type {
+	overflow: hidden;
+	margin-top: 30px;
+}
+.pay-wra .type a {
+	display: inline-block;
+	width: 50%;
+	height: 46px;
+	line-height: 46px;
+	font-size: 18px;
+	text-align: center;
+	box-sizing: border-box;
+	border: 1px solid #ddd;
+}
+.pay-wra .type a:first-child {
+	border-right: none;
+	border-radius: 5px 0 0 0;
+}
+.pay-wra .type a:last-child {
+	border-radius: 0 5px 0 0;
+}
+.pay-wra .type a.active {
+	background-color: #333;
+	color: #fff;
+	border-color: #333;
+}
+.to-pay .pay-item {
+	display: none;
+	border: 1px solid #ddd;
+	border-radius: 0 0 5px 5px;
+	border-top: none;
+	padding: 20px 0;
+}
+.to-pay .pay-item.active {
+	display: block;
+}
+
+.to-pay .pay-item .view-left {
+  display: inline-block;
+  vertical-align: middle;
+}
+.to-pay .pay-item .view-left .pay-code {
+  /*background: url(http://www.orsoon.com/v3/images/vip/pay-com.png) no-repeat -35px -110px;*/
+  width: 120px;
+  height: 120px;
+  position: relative;
+  margin: 20px 0 0 25px;
+  padding: 5px;
+}
+.to-pay .pay-item .view-left .pay-code .c-d {
+  display: none;
+}
+.to-pay .pay-item .view-left .pay-code .pay-code-bg {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  line-height: 160px;
+  text-align: center;
+  background: #000;
+  opacity: .8;
+  filter: alpha(opacity=80);
+}
+.to-pay .pay-item .view-left .pay-code .pay-code-bg a {
+  color: #fff;
+  font-size: 16px;
+}
+.to-pay .pay-item .view-left p {
+  text-align: center;
+  font-size: 12px;
+  color: #666;
+  margin: 10px 0 0 15px;
+}
+.to-pay .pay-item .view-right {
+  display: inline-block;
+  vertical-align: middle;
+  width:140px;
+  margin-right: 10px;
+}
+.to-pay .pay-item .view-right span {
+  font-size: 14px;
+  color: #44423e;
+  display: block;
+  text-align: center;
+}
+.to-pay .pay-item .view-right span .pay-price {
+  font-size: 34px;
+  color: #fe6600;
+}
+.to-pay .pay-item .view-right a {
+  font-size: 12px;
+  color: #888;
+}
+.to-pay .pay-item .tutor-img.weixin-pay {
+  background: url('../../images/wechat-tutorial.png') no-repeat;
+  background-size:100% 100%;
+}
+.to-pay .pay-item .tutor-img.ali-pay {
+  background: url('../../images/alipay-tutorial.png') no-repeat;
+  background-size:100% 100%;
+}
+.to-pay .pay-item .tutor-img {
+  display: inline-block;
+  width: 170px;
+  height: 190px;
+  vertical-align: middle;
+}
+.to-pay .pay-item .ali-logo {
+  height: 50px;
+  line-height: 50px;
+  border-radius: 5px;
+  background-color: #fff;
+  margin: 0 auto;
+  width: 90%;
+  margin-top: 35px;
+}
+.to-pay .pay-item .ali-logo img {
+  vertical-align: middle;
+  margin: 0 25px;
+}
+.to-pay .pay-item .ali-logo .intro {
+  color: #999;
+}
+.to-pay .pay-item .ali-logo .pay-num {
+  float: right;
+  font-size: 16px;
+  margin-right: 20px;
+}
+.to-pay .pay-item .ali-logo .pay-num em {
+  color: #FE6608;
+}
+.to-pay .pay-item .btn-ali {
+  width: 158px;
+  height: 36px;
+  line-height: 36px;
+  color: #fff;
+  letter-spacing: 2px;
+  font-size: 16px;
+  background-color: #fe6600;
+  box-shadow: 0 2px 0 0 #cc2a1e;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  display: block;
+  margin: 30px auto;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+#join-tips {
+	position: fixed;
+	width: 400px;
+	height: 200px;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	border-radius: 10px;
+	padding: 42px;
+	box-sizing: border-box;
+	background-color: #fff;
+	color: #666;
+	text-align: center;
+	box-shadow: 0 0 15px 0 rgba(0,0,0,.2);
+	display: none;
+}
+#join-tips .close-tip {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	font-size: 26px;
+	color: #666;
+	text-align: center;
+	line-height: 30px;
+	right: 10px;
+	top: 5px;
+	cursor: pointer;
+}
+#join-tips p.p-o {
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+#join-tips .tip-join {
+	display: inline-block;
+	width: 150px;
+	height: 40px;
+	line-height: 40px;
+	background-color: #FF5D44;
+	color: #fff;
+	text-align: center;
+	margin-top: 30px;
+	border-radius: 5px;
+}

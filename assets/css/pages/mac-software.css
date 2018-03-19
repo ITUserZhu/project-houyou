@@ -1,0 +1,309 @@
+.fix:after,.fixli:after{display:block;clear:both;visibility:hidden;height:0;overflow:hidden;content:".";}
+.sg-box {
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    position: relative;
+    padding-bottom: 80px;
+}
+.sg-list {
+    width: 1100px;
+    padding: 30px 50px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 2px 3px #ccc;
+
+}
+.sg-list .list-area {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 5px 0;
+    line-height: 40px;
+    overflow: hidden;
+}
+.sg-list .list-area .list-name {
+    width: 150px;
+    height: auto;
+    float: left;
+    border-radius: 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #333;
+    line-height: 40px;
+    text-align: center;
+    box-shadow: 1px 1px 5px #666;
+}
+.list-area:nth-child(1) .list-name{
+    background-color: #222
+}
+.list-area:nth-child(2) .list-name{
+    background-color: #333
+}
+.list-area:nth-child(3) .list-name{
+    background-color: #444
+}
+.list-area:nth-child(4) .list-name{
+    background-color: #555
+}
+.list-area:nth-child(5) .list-name{
+    background-color: #666
+}
+
+
+.sg-list .list-area i {
+    display: inline-block;
+    float: left;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 15px;
+    background-color: #333;
+    box-shadow: 1px 1px 5px #666;
+}
+.sg-list .list-area a:hover,
+.sg-list .list-nav .active {
+    border: 1px solid #333;
+    color: #333;
+}
+.sg-list .list-area a {
+    height: 40px;
+    display: inline-block;
+    font-size: 16px;
+    padding: 0 8px;
+    color: #666;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    margin-left: 40px;
+    transition: all .4s;
+}
+.sg-list .list-area a:nth-child(6n+1){
+    margin-left: 25px;
+}
+.sg-list .list-area .list-nav {
+    float: left;
+    width: 910px;
+}
+.breadcrumbs {
+    width: 1140px;
+    margin: auto;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #dadada;
+    border-radius: 20px;
+    padding: 0 30px;
+    color: #999;
+}
+.breadcrumbs a {
+    color: #777;
+    font-size: 16px;
+}
+.sg-area {
+    width: 1200px;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    background-color: #fff;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0px 2px 3px #ccc;
+}
+.sg-area .sg-area-box.on {
+    background-color: #333;
+    border-radius: 5px;
+}
+.sg-area .sg-area-box p.on{
+    border-color: #333;
+}
+.sg-area .sg-area-box:hover {
+    color: #fff !important;
+    background-color: #333;
+}
+
+.sg-area .sg-area-box:hover font,
+.sg-area .sg-area-box:hover .sg-area-txt span,
+.sg-area .sg-area-box:hover .iconfont {
+    color: #fff!important;
+}
+.sg-area .sg-area-box:hover .sg-area-img,
+.sg-area .sg-area-box:hover .sg-area-txt {
+    border-bottom: 1px solid #333!important;
+}
+
+.sg-area .sg-area-box {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    transition: all .4s;
+}
+.sg-area .sg-area-box .sg-area-main {
+    width: 100%;
+    height: 100%;
+}
+.sg-area .sg-area-box .sg-area-main .sg-area-img {
+    display: block;
+    width: 124px;
+    height: 150px;
+    float: left;
+    padding: 13px 0;
+    margin-left: 30px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #e1e1e1;
+    transition: all .4s;
+}
+
+.sg-area .sg-area-box .sg-area-main .sg-area-img img {
+    display: block;
+    width: 124px;
+    height: 124px;
+}
+.sg-area .sg-area-box .sg-area-txt {
+    display: block;
+    float: left;
+    height: 150px;
+    width: 1040px;
+    position: relative;
+    padding: 13px 30px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #e1e1e1;
+    transition: all .4s;
+}
+.sg-area .sg-area-box .sg-area-txt .sg-area-name {
+    display: block;
+    width: 980px;
+    height: auto;
+    font-weight: normal;
+    font-size: 18px;
+    color: #555;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.sg-area .sg-area-box .sg-area-txt .sg-area-introduce {
+    display: block;
+    width: 980px;
+    height: auto;
+    font-size: 12px;
+    color: #666;
+}
+.sg-area .sg-area-box .sg-area-txt .sg-area-tips {
+    display: block;
+    width: 980px;
+    height: 30px;
+    font-size: 12px;
+    color: #777;
+    overflow: hidden;
+    position: absolute;
+    bottom: 10px;
+    line-height: 30px;
+}
+.sg-area .sg-area-box .sg-area-txt .sg-area-tips font {
+    display: block;
+    float: left;
+    margin-right: 40px;
+}
+.sg-area .sg-area-box .sg-area-txt .sg-area-tips font i {
+    margin-right: 5px;
+    /* position: relative; */
+    /* top: 12px; */
+    font-size: 18px;
+    color: #666;
+    overflow: hidden;
+    vertical-align: middle;
+}
+.sg-area .sg-area-box .sg-area-txt .sg-area-tips font em.ic-img {
+    font-size: 16px;
+    vertical-align: sub;
+}
+.sg-area .sg-area-box .sg-area-txt .sg-area-tips .sg-time {
+    float: right;
+}
+
+/* Mac Article List CSS -------------- */
+
+.sg-area .sg-area-box .sg-area-main .sg-area-img2 {
+    display: block;
+    width: 180px;
+    height: 150px;
+    float: left;
+    padding: 13px 0;
+    margin-left: 30px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #e1e1e1;
+    transition: all .4s;
+}
+
+.sg-area .sg-area-box .sg-area-main .sg-area-img2 img {
+    display: block;
+    width: 176px;
+    height: 110px;
+}
+.sg-area .sg-area-box .sg-area-txt2 {
+    display: block;
+    float: left;
+    height: 150px;
+    width: 990px;
+    position: relative;
+    padding: 13px 30px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #e1e1e1;
+    transition: all .4s;
+}
+.sg-area .sg-area-box .sg-area-txt2 .sg-area-name {
+    display: block;
+    width: 940px;
+    height: auto;
+    font-weight: normal;
+    font-size: 18px;
+    color: #555;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.sg-area .sg-area-box .sg-area-txt2 .sg-area-introduce {
+    display: block;
+    width: 940px;
+    height: auto;
+    font-size: 12px;
+    color: #666;
+}
+.sg-area .sg-area-box .sg-area-txt2 .sg-area-tips {
+    display: block;
+    width: 940px;
+    height: 30px;
+    font-size: 12px;
+    color: #777;
+    overflow: hidden;
+    position: absolute;
+    bottom: 10px;
+    line-height: 30px;
+}
+.sg-area .sg-area-box .sg-area-txt2 .sg-area-tips font {
+    display: block;
+    float: left;
+    margin-right: 40px;
+}
+.sg-area .sg-area-box .sg-area-txt2 .sg-area-tips font i {
+    margin-right: 5px;
+    /* position: relative; */
+    /* top: 12px; */
+    font-size: 18px;
+    color: #666;
+    overflow: hidden;
+    vertical-align: middle;
+}
+.sg-area .sg-area-box .sg-area-txt2 .sg-area-tips .sg-time {
+    float: right;
+}
+/* Mac Article List CSS end------------------ */
+
+
+
+.mac_soft_curr{
+    border: 1px solid #333!important;
+    color: #333!important;
+}
+body {
+    background: #f2f8f8;
+}

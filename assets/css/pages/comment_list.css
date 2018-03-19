@@ -1,0 +1,238 @@
+@charset "UTF-8";
+.breadcrumb .breadcrumb_article {
+    display: inline-block;
+    max-width: 500px;
+    height: 100%;
+    vertical-align: middle;
+    line-height: 18px;
+}
+main {
+    width: 1200px;
+    margin: 0 auto;
+}
+#comment-area .pos-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 47px;
+    background-color: #FFA227;
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+    text-align: center;
+    top: -4px;
+}
+#comment-area .pos-title:after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-bottom: 4px solid #CF7D0F;
+    border-right: 4px solid transparent;
+    position: absolute;
+    top: 0;
+    right: -4px;
+}
+#comment-area {
+    width: 590px;
+    height: 250px;
+    float: right;
+    margin-top: 0;
+    border: none;
+    position: relative;
+}
+#comment-area .net-name {
+    display: inline-block;
+    height: 30px;
+    width: 50px;
+    background-color: #17882f;
+    color: #fff;
+    line-height: 30px;
+    text-align: center;
+    margin-left: 50px;
+    vertical-align: middle;
+}
+#comment-area .scores .nickname {
+    border: 1px solid #17882f;
+    vertical-align: middle;
+    height: 28px;
+}
+#comment-area .text-input {
+   border-color: #ddd;
+   border-radius: 10px; 
+   margin-top: 15px;
+   height: 100px;
+   margin-bottom: 18px;
+}
+.ajax_code-img {
+    float: left;
+    margin-left: 20px;
+}
+.grade .scores .post-btn.disabled {
+    background-color: #fff;
+}
+.grade .scores .post-btn {
+    text-align: center;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #00aee8;
+    border-color: #00aee8;
+}
+.ajax_code-img .ajax_verify-code {
+    height: 28px;
+    border: 1px solid #00aee8;
+}
+.ajax_code-img .ajax_code_img {
+    height: 30px;
+}
+.grade .text-input .word-count, .reply-div-wrapper .word-count {
+    left: 90%;
+}
+.comments-wrapper .emoji-wrapper {
+    right: 94%;
+    bottom: 5px;
+}
+.comments-wrapper .emoji-wrapper .icon-emoji {
+    color: #666;
+}
+.article-preview {
+    width: 560px;
+    height: 220px;
+    background: #fff;
+    position: relative;
+    padding: 15px;
+    float: left;
+}
+.article-preview .prev-title {
+    font: 500 24px/30px '微软雅黑';
+    color: #282828;
+    margin: 0;
+    height: 60px;
+    overflow: hidden;
+}
+.article-preview .prev-desc {
+    font-size: 14px;
+    color: #666;
+    max-height: 72px;
+    line-height: 24px;
+    overflow: hidden;
+    text-align: justify;
+    margin-top: 10px;
+}
+.article-preview .go-back-btn {
+    display: block;
+    margin: 20px auto 0;
+    right: 20px;
+    top: 35px;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    background: #17882f;
+}
+.article-preview .go-back-btn:before {
+    font-size: 20px;
+    margin-right: 12px;
+    vertical-align: bottom;
+}
+.comments-wrapper .comment_title {
+    font-weight: normal;
+    font-size: 18px;
+    padding-left: 12px;
+    margin-bottom: 20px;
+    height: 39px;
+    line-height: 39px;
+    border-bottom: 1px solid #0cad12;
+}
+.common_pagination {
+    position: static;
+    margin-top: 20px;
+}
+.comments-wrapper section.posted {
+    float: left;
+    width: 890px;
+    margin-top: 20px;
+    position: relative;
+    background: #fff;
+    padding: 10px 10px 85px 10px;
+}
+.comments-wrapper section.posted .pagination {
+    padding: 20px 0;
+    background: #fff;
+    bottom: 0;
+}
+.comments-wrapper .pagination .prev,
+.comments-wrapper .pagination .next {
+    color: #17882f;
+    border-color: #17882f;
+}
+.comments-wrapper .pagination .prev.disabled,
+.comments-wrapper .pagination .next.disabled {
+    color: #ddd;
+    border-color: #ddd;
+    cursor: default;
+}
+.comments-wrapper section.hot-reviews {
+    float: right;
+    width: 280px;
+    min-height: 500px;
+    background: #fff;
+    margin-top: 20px;
+}
+.comments-wrapper section.hot-reviews hgroup {
+    height: 50px;
+    border-bottom: 1px solid #0cad12;
+    text-align: center;
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+.hot-reviews hgroup .title {
+    line-height: 1;
+}
+.hot-reviews hgroup .title_ch {
+    font-size: 16px;
+    color: #17882f;
+    font-weight: 400;
+}
+.hot-reviews hgroup .title_en {
+    font-size: 12px;
+    color: #999;
+    font-weight: 100;
+
+}
+.comments-wrapper .hot-reviews .list-wrapper {
+    font-size: 14px;
+    padding: 5px;
+}
+.comments-wrapper .hot-reviews .list-item {
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+}
+.comments-wrapper .hot-reviews .list-item a {
+    color: #666;
+    display: inline-block;
+    height: 100%;
+    max-width: 100%;
+}
+.comments-wrapper .hot-reviews .list-item:hover {
+    background: #f1f1f1;
+}
+.comments-wrapper .hot-reviews .list-item .index {
+    display: inline-block;
+    width: 20px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 10px;
+    color: #999;
+}
+.comments-wrapper .hot-reviews .list-item:nth-child(-n+3) .index {
+    color: #feb527;
+}

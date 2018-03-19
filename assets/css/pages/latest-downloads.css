@@ -1,0 +1,85 @@
+main {
+  padding-bottom: 110px;
+}
+h1 {
+  line-height: 40px;
+  background: #fff;
+  padding-left: 10px;
+  font-size: 16px;
+  margin: 10px 0 20px;
+}
+.filters {
+  margin: 20px 0;
+  font-size: 0;
+}
+.filters a {
+  display: inline-block;
+  font-size: 16px;
+  width: 140px;
+  line-height: 48px;
+  text-align: center;
+  border: 1px solid #e6e6e6;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+.filters a.active {
+  border-color: #38c34b;
+}
+.filters a span,
+.filters a i {
+  display: inline-block;
+  vertical-align: middle;
+}
+.filters a i {
+  font-size: 26px;
+  margin-right: 10px;
+}
+.lists li {
+  width: 575px;
+  height: 100px;
+  background: #fff;
+  padding: 20px 10px;
+  margin-bottom: 20px;
+  transition: all 0.4s;
+}
+.lists li:nth-child(odd) {
+  float: left;
+}
+.lists li:nth-child(even) {
+  float: right;
+}
+.lists li:hover {
+  box-shadow: 0 0 10px rgba(99,107,100,0.2);
+}
+.lists li .img-wrapper {
+  float: left;
+  width: 96px;
+  height: 96px;
+  overflow: hidden;
+  text-align: center;
+  margin-right: 10px;
+}
+.lists li img {
+  height: 100%;
+}
+.lists li .right {
+  overflow: hidden;
+}
+.lists li p {
+  line-height: 1;
+}
+.lists li .title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.lists li .desc {
+  color: #999;
+  line-height: 20px;
+  height: 40px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.lists li .notes {
+  font-size: 12px;
+  text-align: center;
+}

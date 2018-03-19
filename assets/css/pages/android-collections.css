@@ -1,0 +1,116 @@
+main.container {
+  padding-bottom: 110px;
+}
+.padding {
+  padding: 0 20px;
+}
+.cate {
+  font-size: 0;
+}
+.cate .cate-item {
+  display: inline-block;
+  width: 570px;
+  height: 90px;
+  padding-top: 10px;
+  font-size: 16px;
+  text-align: center;
+  background: #f0f0f0;
+}
+.cate .cate-item:first-child {
+  margin-right: 20px;
+}
+.cate .cate-item.active {
+  background: #fff;
+  box-shadow: 0 0 15px rgba(7,0,2,0.2);
+}
+.cate .cate-item .name {
+  line-height: 26px;
+}
+.col-lists {
+  margin-top: 20px;
+  font-size: 0;
+}
+.col-lists>li {
+  display: inline-block;
+  width: 570px;
+  background: #fff;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+.col-lists>li:nth-child(odd) {
+  margin-right: 20px;
+}
+.col-lists>li .top {
+  height: 230px;
+  overflow: hidden;
+  position: relative;
+}
+.col-lists>li .top:hover img{
+  transform:translateX(-50%) scale(1.2);
+}
+.col-lists>li .top img {
+  height: 100%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  transition: all .4s;
+}
+.col-lists>li .top .title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-left: 20px;
+  font-size: 20px;
+  color: #fff;
+  line-height: 50px;
+  background: rgba(0,0,0,0.5);
+}
+.col-lists .lists {
+  height: 90px;
+  padding: 0 20px;
+  font-size: 0;
+  position: relative;
+  z-index: 2;
+}
+.col-lists .lists>li {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  margin: 10px 20px 0 0;
+  position: relative;
+}
+.col-lists .lists>li a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  transform: translate3d(0,0,0);
+  transition: all .4s;
+  position: absolute;
+  z-index: 2;
+}
+.col-lists .lists>li span.title {
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+  max-width: 100%; 
+  left: 0;
+  bottom: 2px;
+  margin: 0 auto;
+  opacity: 0;
+  transition: all .4s;
+} 
+.col-lists .lists>li:hover a {
+  transform: translate3d(0, -30px, 0);
+}
+.col-lists .lists>li:hover span.title {
+  opacity: 1;
+}
+.col-lists .lists li:nth-child(6n) {
+  margin-right: 0;
+}
+.col-lists .lists img {
+  height: 100%;
+  width: 100%;
+}

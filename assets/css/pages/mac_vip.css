@@ -1,0 +1,694 @@
+
+.c-r .login-info {
+  height: 38px;
+  background-color: #fdf5ee;
+  border: 1px solid #f8bf89;
+  line-height: 40px;
+  font-size: 16px;
+  color: #888;
+  padding: 0 10px;
+}
+.c-r .login-info .p-text-green {
+  color: #3ebb2b;
+}
+.crb-box {
+  width: 100%;
+  height: 265px;
+}
+.crb-box .cb-t {
+  overflow: hidden;
+  display: block;
+  width: 100%;
+  height: 34px;
+}
+.crb-box .cb-t a:first-child {
+  border-radius: 5px 0px 0 0;
+}
+.crb-box .cb-t a:last-child {
+  border-radius: 0px 5px 0 0;
+}
+.crb-box .cb-t .curr {
+  border-bottom: 1px solid #fafafa;
+  background-color: #fafafa;
+}
+.crb-box .cb-t a {
+  font-size: 16px;
+  text-align: center;
+  font-weight: 700;
+  line-height: 34px;
+  border: 1px solid #e1e1e1;
+  width: 138px;
+  height: 34px;
+  box-sizing: border-box;
+  background: #fff;
+  float: left;
+}
+.crb-box dd {
+  width: 100%;
+  height: 231px;
+  background-color: #fafafa;
+}
+.crb-box dd .tb {
+  display: none;
+}
+.crb-box dd .tt .view-left {
+  display: inline-block;
+  vertical-align: middle;
+}
+.crb-box dd .tt .view-left .pay-code {
+  /*background: url(http://www.orsoon.com/v3/images/vip/pay-com.png) no-repeat -35px -110px;*/
+  width: 160px;
+  height: 160px;
+  position: relative;
+  margin: 20px 0 0 25px;
+  padding: 5px;
+}
+.crb-box dd .tt .view-left .pay-code .c-d {
+  display: none;
+}
+.crb-box dd .tt .view-left .pay-code .pay-code-bg {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  line-height: 160px;
+  text-align: center;
+  background: #000;
+  opacity: .8;
+  filter: alpha(opacity=80);
+}
+.crb-box dd .tt .view-left .pay-code .pay-code-bg a {
+  color: #fff;
+  font-size: 16px;
+}
+.crb-box dd .tt .view-left p {
+  text-align: center;
+  font-size: 12px;
+  color: #666;
+  margin: 10px 0 0 25px;
+}
+#wechat-logo {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url(../../images/icon-wechat.png) no-repeat;
+  background-size: 20px 20px;
+  vertical-align: middle;
+  margin-right: 7px;
+}
+#alipay-logo {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url(../../images/icon-alipay.png) no-repeat;
+  background-size: 20px 20px;
+  vertical-align: middle;
+  margin-right: 7px;
+}
+.crb-box dd .tt .view-right {
+  display: inline-block;
+  vertical-align: middle;
+  width:140px;
+  margin-right: 10px;
+}
+.crb-box dd .tt .view-right span {
+  font-size: 14px;
+  color: #44423e;
+  display: block;
+}
+.crb-box dd .tt .view-right span .pay-price {
+  font-size: 25px;
+  color: #fe6600;
+}
+.crb-box dd .tt .view-right a {
+  font-size: 12px;
+  color: #888;
+}
+
+.crb-box dd .tt .tutor-img.weixin-pay {
+  background: url('../../images/wechat-tutorial.png') no-repeat;
+  background-size:100% 100%;
+}
+.crb-box dd .tt .tutor-img.ali-pay {
+  background: url('../../images/alipay-tutorial.png') no-repeat;
+  background-size:100% 100%;
+}
+.crb-box dd .tt .tutor-img {
+  display: inline-block;
+  width: 170px;
+  height: 204px;
+  vertical-align: middle;
+}
+.crb-box dd .t3 {
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  height: 230px;
+  padding: 10px 47px;
+}
+.crb-box dd .t3 .bank-warp {
+  height: 162px;
+  background: url(http://www.orsoon.com/v3/images/vip/banks_newv1.png) no-repeat 0 0;
+}
+.crb-box dd .t3 .bank-warp a.on {
+  border: 2px solid #ff5200;
+  position: relative;
+}
+.crb-box dd .t3 .bank-warp a {
+  height: 40px;
+  width: 151px;
+  float: left;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.crb-box dd .t3 .bank-submit {
+  position: absolute;
+  text-align: right;
+  bottom: 10px;
+  right: 47px;
+}
+.crb-box dd .t3 .bank-submit span {
+  display: block;
+  font-size: 14px;
+  color: #44423e;
+}
+.crb-box dd .t3 .bank-submit span em {
+  font-size: 20px;
+  color: #ff5200;
+}
+.crb-box dd .t3 .bank-submit span .btn-submit {
+  display: block;
+  width: 126px;
+  height: 36px;
+  text-align: center;
+  line-height: 36px;
+  font-size: 16px;
+  border-radius: 3px;
+  background-color: #ff6165;
+  color: #fff;
+  margin: 6px 0;
+}
+.crb-box dd .t3 .bank-submit span a {
+  font-size: 12px;
+  color: #888;
+}
+.text-b .tot{
+	display: inline-block !important;
+	font-size: 36px !important;
+	color: #333 !important;
+}
+.zot{
+	display: none;
+}
+.jf{
+	font-size: 20px;
+	color: #ff5200;
+}
+.c-r-c {
+	height: auto;
+	overflow: hidden;
+	margin-top: 20px;
+  font-size: 14px;
+}
+.c-r-c.off{
+  font-size: 12px;
+}
+.c-r-c.off li{
+  line-height: 1.5;
+}
+
+#alipaycode,#weixincode{
+	width:160px;
+	height:160px;
+}
+
+.header_nav_kk{display:none;}
+
+.clearfix:after {
+  content: '';
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+.wrapper {
+  width: 1200px;
+  margin: 30px auto;
+}
+.vip-box {
+  width: 554px;
+  min-height: 610px;
+  padding: 30px 18px;
+  border: 1px solid #e8e8e9;
+  background: #fff;
+  position: relative;
+}
+.vip-box:after {
+  content: '';
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+.vip-box-left {
+  float: left;
+}
+.vip-box-left .box-container {
+  width: 100%;
+  height: 500px;
+  margin-bottom: 30px;
+  position: relative;
+}
+.vip-box-left .boxes {
+  width: 302px;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+  box-shadow: 0 2px 15px rgba(176,176,176,0.7);
+  position: absolute;
+  top: 0;
+  transition: all 0.4s;
+  background: #fff;
+  margin-left: -151px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.vip-box-left .boxes .vip-header {
+  padding: 0 10px;
+  height: 76px;
+  line-height: 76px;
+  background: #2fb76f;
+  border-radius: 8px 8px 0 0;
+  position: relative;
+}
+.vip-box-left .boxes .vip-header:after {
+  content: '';
+  display: block;
+  width: 90%;
+  left: 5%;
+  height: 0;
+  border-bottom: 4px solid #fff;
+  position: absolute;
+  bottom: 50%;
+  margin-bottom: -2px;
+}
+.vip-box-left .boxes .vip-header .vip-type {
+  width: 70%;
+  margin: 0 auto;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  position: relative;
+  background: inherit;
+  z-index: 10;
+}
+.vip-box-left .boxes .price {
+  text-align: center;
+  padding: 30px 0;
+}
+.vip-box-left .boxes .price strong {
+  font-size: 48px;
+  color: #555;
+  font-weight: 700;
+  margin-right: 3px;
+}
+.vip-box-left .boxes .details ul {
+  list-style: disc;
+  margin-left: 75px;
+}
+.vip-box-left .boxes .details ul li {
+  font-size: 14px;
+  color: #666;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+.vip-box-left .boxes .details ul li span.tag {
+  font-size: 12px;
+  color: #49A5DF;
+  display: inline-block;
+  transform: scale(0.9);
+}
+.vip-box-left .boxes footer {
+  text-align: center;
+  padding-bottom: 30px;
+}
+.vip-box-left .boxes input[type="button"] {
+  width: 118px;
+  height: 32px;
+  line-height: 32px;
+  margin-top: 30px;
+  color: #fff;
+  letter-spacing: 2px;
+  font-size: 16px;
+  background-color: #fe6600;
+  box-shadow: 0 2px 0 0 #cc2a1e;
+  position: relative;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.vip-box-left .side-notes {
+  width: 380px;
+  font-size: 12px;
+  position: absolute;
+  bottom: 30px;
+  left: 120px;
+}
+.vip-box-left .side-notes p {
+  color: #666;
+  line-height: 2;
+}
+.vip-box-right {
+  float: right;
+}
+.vip-box-right .payment-methods {
+  margin-bottom: 30px;
+}
+.vip-box-right input.vip-type-btn {
+  width: 270px;
+  height: 50px;
+  line-height: 50px;
+  color: #666;
+  letter-spacing: 2px;
+  font-size: 24px;
+  position: relative;
+  border: 1px solid rgba(34,34,34,0.9);
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  background: #fff;
+  margin-right: 10px;
+}
+.vip-box-right input.vip-type-btn.current {
+  color: #fff;
+  background-color: #333;
+  border-color: inherit;
+}
+.vip-box-right input.vip-type-btn:last-child {
+  margin-right: 0;
+}
+.vip-box-right .coupon-details {
+  margin-bottom: 30px;
+}
+.vip-box-right .price-details .prices {
+  width: 30%;
+  padding: 3px 0;
+  text-align: center;
+  color: #666;
+  border: 1px solid #999;
+  border-radius: 3px;
+  float: left;
+  margin-right: 4%;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.vip-box-right .price-details .prices:nth-child(3n) {
+  margin-right: 0;
+}
+.vip-box-right .price-details .prices.current {
+  position: relative;
+  border-color: #fe6600;
+}
+.vip-box-right .price-details .prices.current:after {
+  content: '';
+  color: #fff;
+  font-size: 14px;
+  position: absolute;
+  bottom: 2px;
+right: 2px;
+border-left: 1px solid #fff;
+border-top: 1px solid #fff;
+width: 4px;
+height: 10px;
+transform: rotate(-135deg);
+}
+.vip-box-right .price-details .prices.current:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border: 10px solid;
+  border-color: transparent #fe6600 #fe6600 transparent;
+}
+.vip-box-right .price-details .prices strong {
+  color: #555;
+  font-size: 24px;
+  margin-right: 3px;
+}
+.vip-box-right .title {
+  font-size: 18px;
+  line-height: 20px;
+  border-left: 4px solid #333;
+  padding-left: 5px;
+  margin: 10px 0;
+}
+.tada {
+  animation: tada 1s;
+  -webkit-animation: tada 1s;
+}
+@-moz-keyframes tada {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+  10%, 20% {
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+  }
+  30%, 50%, 70%, 90% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+  40%, 60%, 80% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+@-webkit-keyframes tada {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+  10%, 20% {
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+  }
+  30%, 50%, 70%, 90% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+  40%, 60%, 80% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+@-o-keyframes tada {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+  10%, 20% {
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+  }
+  30%, 50%, 70%, 90% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+  40%, 60%, 80% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes tada {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+  10%, 20% {
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+  }
+  30%, 50%, 70%, 90% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+  40%, 60%, 80% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+.tt.tb {
+  overflow: hidden;
+}
+.tt.tb .btn-ali {
+  width: 158px;
+  height: 36px;
+  line-height: 36px;
+  color: #fff;
+  letter-spacing: 2px;
+  font-size: 16px;
+  background-color: #fe6600;
+  box-shadow: 0 2px 0 0 #cc2a1e;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  display: block;
+  margin: 30px auto;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+.tt.tb .ali-logo {
+  height: 50px;
+  line-height: 50px;
+  border-radius: 5px;
+  background-color: #fff;
+  margin: 0 auto;
+  width: 90%;
+  margin-top: 35px;
+}
+.tt.tb .ali-logo img {
+  vertical-align: middle;
+  margin: 0 25px;
+}
+.tt.tb .ali-logo .intro {
+  color: #999;
+}
+.tt.tb .ali-logo .pay-num {
+  float: right;
+  font-size: 16px;
+  margin-right: 20px;
+}
+.tt.tb .ali-logo .pay-num em {
+  color: #FE6608;
+}
+.payback-box{position:fixed;top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,.7);z-index:9999;display:none}.payback-sign{position:relative;left:50%;top:50%;width:400px;height:150px;padding:30px 0 20px;background-color:#fff;transform:translate(-50%,-50%);-webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);-moz-transform:translate(-50%,-50%);-o-transform:translate(-50%,-50%);border-radius:5px}.pay-ok-txt{width:160px;float:left;margin-left:110px}.pay-ok{width:33px;height:33px;margin:0 auto;background:url(http://www.orsoon.com/v3/images/vip/pay-com.png) 0 -99px no-repeat;float:left;}.pay-ok-wx{width:33px;height:33px;margin:0 auto;background:url(http://www.orsoon.com/v3/images/vip/pay-com.png) 0 -142px no-repeat;}.pay-ok-ali{width:33px;height:33px;margin:0 auto;background:url(http://www.orsoon.com/v3/images/vip/pay-com.png) 0 -185px no-repeat;}.clearfloat{clear: both;}
+
+.coupon-wra {
+  height: 38px;
+  border: 1px solid #999;
+  border-radius: 5px;
+  line-height: 38px;
+  font-size: 16px;
+  padding: 0 15px 0 35px;
+  box-sizing: border-box;
+  position: relative;
+  cursor: pointer;
+}
+.coupon-wra i {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background-color: #ccc;
+}
+.coupon-wra i:before {
+  content: '';
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  left: 5px;
+  top: 5px;
+  background-color: transparent;
+}
+.coupon-wra.active {
+  border-color: #FE6600;
+}
+.coupon-wra.active i {
+  background-color: #FE6600;
+}
+.coupon-wra.active i:before {
+  background-color: #fff;
+}
+.discounts {
+  width: 330px;
+  max-height: 161px;
+  overflow: auto;
+  padding: 10px;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  box-shadow: 0 5px 15px 0 rgba(0,0,0,0.15);
+  z-index: 2;
+  background-color: #fff;
+  display: none;
+}
+.discounts.active {
+  display: block;
+}
+.discounts li {
+  height: 45px;
+  border: 1px solid #ddd;
+  position: relative;
+  margin-bottom: 10px;
+}
+.discounts li:last-child {
+  margin-bottom: 0;
+}
+.discounts li .discount-num {
+  display: inline-block;
+  border-right: 1px dashed #ddd;
+  position: relative;
+  width: 70px;
+  font-size: 26px;
+  text-align: center;
+  line-height: 45px;
+  height: 100%;
+  float: left;
+}
+.discounts li:before,
+.discounts li:after,
+.discounts li .discount-num:before,
+.discounts li .discount-num:after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.discounts li:before {
+  left: -6px;
+  top: -6px;
+  border-right: 1px solid #ddd;
+  transform: rotate(45deg);
+}
+.discounts li:after {
+  left: -6px;
+  bottom: -6px;
+  border-top: 1px solid #ddd;
+  transform: rotate(45deg);
+}
+.discounts li .discount-num:before {
+  top: -6px;
+  right: -6px;
+  border-left: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  transform: rotate(-45deg);
+}
+.discounts li .discount-num:after {
+  bottom: -6px;
+  right: -6px;
+  border-right: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  transform: rotate(-45deg);
+}
+.discounts li .coupon-info {
+  overflow: hidden;
+  color: #999;
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 5px 0 0 24px;
+}
+.discounts li .coupon-info span {
+  position: absolute;
+  right: 10px;
+  top: 7px;
+  width: 58px;
+  height: 28px;
+  border: 1px solid #FE812D;
+  color: #FE812D;
+  text-align: center;
+  line-height: 28px;
+  font-size: 16px;
+}

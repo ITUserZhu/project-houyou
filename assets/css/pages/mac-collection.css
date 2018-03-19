@@ -1,0 +1,211 @@
+.coll-banner {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background-color: #fff;
+  height: 280px;
+}
+.coll-banner .top {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 20px 50px;
+  box-sizing: border-box;
+}
+.coll-banner .column {
+  width: 590px;
+  overflow: hidden;
+  float: left;
+  margin-right: 115px;
+  margin-top: 20px;
+}
+.coll-banner .column h1 {
+  font-size: 32px;
+}
+.coll-banner .column p {
+  font-size: 16px;
+  color: #666;
+  margin-top: 30px;
+  width: 580px;
+  height: 4.5em;
+}
+.coll-banner .top ul {
+  width: 305px;
+  height: 205px;
+  overflow: hidden;
+  position: relative;
+  padding: 20px 10px;
+}
+.coll-banner .top ul:after {
+  content: "";
+  position: absolute;
+  width: 250px;
+  height: 3px;
+  left: 30px;
+  bottom: 43px;
+  background-color: #fff;
+  box-shadow: 0 34px 18px 0px rgba(0,0,0,.5);
+}
+.coll-banner .top ul li {
+  float: left;
+  width: 150px;
+  height: 188px;
+  text-align: center;
+  box-shadow: rgba(155, 155, 155, 0.4) 0 0 15px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+.coll-banner .top ul li:first-child {
+  position: absolute;
+  top: 15px;
+  height: 200px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+  z-index: 2;
+}
+.coll-banner .top ul li img {
+  height: 100px;
+  width: 100px;
+  margin-top: 50px;
+}
+.coll-banner .top ul li:first-child img {
+  width: 120px;
+  height: 120px;
+  margin-top: 45px;
+} 
+.coll-box {
+  width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 80px;
+}
+.coll-box>p {
+  font-size: 18px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.coll-box ul li {
+  width: 350px;
+  height: 200px;
+  float: left;
+  margin-left: 55px;
+  margin-top: 40px;
+  padding: 35px 25px 13px 60px;
+  box-sizing: border-box;
+  transition: all .4s;
+  background-color: #fff;
+  position: relative;
+}
+.coll-box ul li .img {
+  position: absolute;
+  left: -38px;
+  top: -18px;
+  width: 90px;
+  height: 90px;
+}
+.coll-box ul li .img img {
+  width: 100%;
+  height: 100%;
+}
+.coll-box ul li:nth-child(3n+1) {
+  margin-left: 0;
+}
+.coll-box ul li:hover {
+  box-shadow: 0 0 20px 0 rgba(0,0,0,.2);
+}
+.coll-box ul li .title {
+  font-size: 18px;
+  height: 3.2em;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+.coll-box ul li span {
+  color: #999;
+  width: 45%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: inline-block;
+  padding-right: 10px;
+}
+.coll-box ul li span.version {
+  color: #DE6C29;
+  width: auto;
+  max-width: 100%;
+}
+.coll-box ul li .btn {
+  display: inline-block;
+  transition: all .4s;
+  width: 100%;
+  height: 26px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 26px;
+  margin-top: 5px;
+}
+.coll-box ul li:hover .btn {
+  background-color: #30A338;
+  color: #fff;
+  border-color: #30A338;
+}
+/*相关文章*/
+.rl-articles {
+  width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+.rl-articles h2 {
+  font-size: 28px;
+  border-left: 4px solid #333;
+  padding-left: 10px;
+  line-height: 30px;
+  margin-bottom: 25px;
+}
+.rl-articles .column-wrapper {
+  overflow: hidden;
+}
+.rl-articles .column {
+  float: left;
+  width: 32%;
+  height: 100%;
+  padding-left: 15px;
+  margin-right: 2%;
+  background: #fff;
+  border-left: 4px solid #999;
+  box-sizing: border-box;
+}
+.rl-articles .column:nth-child(3n) {
+  margin-right: 0;
+}
+.rl-articles .column a {
+  display: block;
+  position: relative;
+  padding-left: 20px;
+  line-height: 42px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  transition: all .2s;
+}
+.rl-articles .column a:after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #dfdfdf;
+  left: 0;
+  top: 18px;
+  transition: all .2s;
+}
+.rl-articles .column a:hover {
+  text-decoration: underline;
+  color: #5bb160;
+}
+.rl-articles .column a:hover:after {
+  background: #5bb160;
+}

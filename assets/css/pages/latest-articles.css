@@ -1,0 +1,143 @@
+main.container {
+  padding-bottom: 110px;
+}
+h1 {
+  line-height: 40px;
+  background: #fff;
+  padding-left: 10px;
+  font-size: 16px;
+  margin: 10px 0 20px;
+}
+.a-left {
+  width: 820px;
+  background: #fff;
+  padding-bottom: 20px;
+}
+.a-left li {
+  height: 210px;
+  padding: 0 30px 0 20px;
+  border-bottom: 1px dashed #e6e6e6;
+  border-left: 2px solid transparent;
+  transition: all 0.2s;
+}
+.a-left li:hover {
+  border-left-color: #0cad12;
+  background: #f4f4f4;
+}
+.a-left li .title {
+  line-height: 58px;
+  font-size: 18px;
+}
+.a-left li .img-wrapper {
+  float: left;
+  width: 174px;
+  height: 130px;
+  overflow: hidden;
+  text-align: center;
+  margin-right: 30px;
+}
+.a-left li img {
+  height: 100%;
+}
+.a-left li .desc {
+  color: #999;
+  line-height: 22px;
+  height: 66px;
+  overflow: hidden;
+  margin-bottom: 45px;
+}
+.a-left li .info {
+  color: #666;
+}
+.a-right {
+  width: 370px;
+}
+section {
+  background: #fff;
+  margin-bottom: 20px;
+}
+section h2 {
+  line-height: 38px;
+  border-bottom: 2px solid #38c34b;
+  text-align: center;
+  font-size: 16px;
+}
+.h-articles ul {
+  padding: 0 10px 10px;
+}
+.h-articles li {
+  line-height: 26px;
+  transition: all 0.2s;
+  margin: 10px 0;
+}
+.h-articles li:hover {
+  background: #cdcdcd;
+}
+.h-articles li:nth-child(1) i {
+  background: #f00;
+}
+.h-articles li:nth-child(2) i {
+  background: #f07e1a;
+}
+.h-articles li:nth-child(3) i {
+  background: #f7ca18;
+}
+.h-articles li:last-child {
+  margin-bottom: 0;
+}
+.h-articles li i {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  line-height: 26px;
+  text-align: center;
+  border-radius: 50%;
+  background: #ddd;
+  color: #fff;
+  font-size: 12px;
+  margin-right: 10px;
+  font-style: normal;
+  vertical-align: middle;
+}
+.h-articles li span {
+  display: inline-block;
+  max-width: 300px;
+  vertical-align: middle;
+}
+.h-downloads ul {
+  padding: 20px 10px;
+}
+.h-downloads li {
+  float: left;
+  width: 80px;
+  height: 112px;
+  margin-right: 10px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.h-downloads li:hover .img-wrapper {
+  background: #cdcdcd;
+}
+.h-downloads li:hover p {
+  background: #b4b4b4;
+}
+.h-downloads li:nth-child(4n) {
+  margin-right: 0;
+}
+.h-downloads li:nth-last-child(-n+4) {
+  margin-bottom: 0;
+}
+.h-downloads li .img-wrapper {
+  height: 70px;
+  padding: 5px 0;
+  transition: all 0.2s;
+}
+.h-downloads li img {
+  width: 70px;
+  height: 70px;
+}
+.h-downloads li p {
+  padding: 0 5px;
+  line-height: 32px;
+  transition: all 0.2s;
+}

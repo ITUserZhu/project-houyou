@@ -1,0 +1,94 @@
+main.container {
+  padding-bottom: 110px;
+  margin-top: 20px;
+}
+.cate {
+  float: left;
+  width: 190px;
+  margin-right: 10px;
+  background: #fff;
+}
+.cate a {
+  display: block;
+  line-height: 50px;
+  text-align: center;
+  font-size: 18px;
+}
+.cate a.active,
+.cate a:hover {
+  background: #38c34b;
+  color: #fff;
+}
+.article {
+  overflow: hidden;
+  background: #fff;
+}
+.article .sub-nav {
+  padding: 10px 20px;
+  font-size: 0;
+  border-bottom: 1px solid #ddd;
+}
+.article .sub-nav a {
+  display: inline-block;
+  font-size: 14px;
+  width: 100px;
+  line-height: 32px;
+  border: 1px solid #eee;
+  background: #f9f9f9;
+  border-radius: 16px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.article .sub-nav a:nth-child(8n) {
+  margin-right: 0;
+}
+.article .sub-nav a.active,
+.article .sub-nav a:hover {
+  border-color: #38c34b;
+  color: #38c34b;
+  background: #fff;
+}
+.article ul {
+  padding: 0 20px;
+}
+.article li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+  height: 150px;
+}
+.article li:hover .title {
+  color: #38c34b;
+}
+.article li:last-child {
+  border-bottom: none;
+}
+.article li .img-wrapper {
+  width: 200px;
+  height: 150px;
+  float: left;
+  overflow: hidden;
+  text-align: center;
+  margin-right: 10px;
+}
+.article li img {
+  height: 100%;
+  width: 100%;
+}
+.article li .right {
+  overflow: hidden;
+}
+.article li .title {
+  padding-right: 25px;
+  line-height: 50px;
+  margin-top: 4px;
+  font-size: 18px;
+  transition: all 0.2s;
+}
+.article li .desc {
+  line-height: 22px;
+  height: 44px;
+  overflow: hidden;
+  margin-bottom: 16px;
+  padding-right: 25px;
+}

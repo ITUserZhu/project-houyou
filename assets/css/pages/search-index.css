@@ -1,0 +1,120 @@
+body {
+  padding-bottom: 150px;
+}
+.container {
+  width: 100%;
+  background-position: center 0;
+  background-size: cover;
+}
+.nav-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 41px;
+  line-height: 41px;
+  font-size: 14px;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+.nav-top strong {
+  font-weight: normal;
+  float: left;
+  margin-left: 20px;
+}
+.nav-top i {
+  float: right;
+  display: inline;
+  font-style: normal;
+  margin-right: 20px;
+}
+.nav-top i a {
+  margin: 0 10px;
+}
+.wrapper {
+  width: 850px;
+  margin: 0 auto;
+  height: 440px;
+  position: relative;
+}
+.img {
+  position: relative;
+  height: 68%;
+  min-height: 250px;
+  text-align: center;
+}
+.img img {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  margin-left: -160px;
+}
+.ipt {
+  height: 40px;
+  outline-style: none;
+  width: 600px;
+  vertical-align: middle;
+  box-sizing: border-box;
+  border: none;
+  padding: 0 10px;
+  font-size: 14px;
+  /* box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15) */
+}
+form {
+  margin-top: 20px;
+  width: 850px;
+  text-align: center;
+}
+.btn {
+  height: 40px;
+  width: 100px;
+  border: none;
+  line-height: 40px;
+  text-align: center;
+  font-size: 16px;
+  vertical-align: middle;
+  box-sizing: border-box;
+  margin-left: -5px;
+  background-color: #30A338;
+  color: #fff;
+  font-weight: bold;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+.recommend {
+  width: 1120px;
+  height: 260px;
+  margin: 0 auto;
+  background-color: #fff;
+  opacity: 0.9;
+  border-radius: 10px;
+  padding: 40px 0;
+}
+.recommend .type-item {
+  float: left;
+  width: 244px;
+  border-right: 1px solid #ddd;
+  padding-left: 35px;
+}
+.recommend .type-item:last-child{
+  border: none;
+}
+.recommend .type-item p {
+  color: #15893f;
+  font-size: 18px;
+  border-bottom: 3px solid #15893f;
+  display: inline-block;
+  padding: 0 5px 5px 5px;
+  margin-bottom: 5px;
+}
+.recommend .type-item ul li {
+  font-size: 16px;
+  line-height: 2.7em;
+  max-width: 90%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.recommend .type-item ul li:hover a {
+  color: #15893f;
+}
